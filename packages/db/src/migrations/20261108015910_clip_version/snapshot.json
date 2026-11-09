@@ -1,0 +1,601 @@
+{
+  "type": "diff",
+  "version": "9",
+  "dialect": "postgres",
+  "id": "4e9de90d-a0cf-4627-871b-664b3bbcfc4d",
+  "prevIds": [
+    "3d80fd02-c463-4da1-9af3-3a85e29db5a8"
+  ],
+  "footprints": [
+    {
+      "statementType": "create_enum",
+      "statementTarget": [
+        "enum",
+        "public",
+        "version_status"
+      ],
+      "writes": [
+        "s|enum|public.version_status",
+        "n|enum|public.version_status",
+        "e|enum|public.version_status",
+        "n|type|public.version_status"
+      ],
+      "reads": [
+        "n|sch|public"
+      ]
+    },
+    {
+      "statementType": "create_table",
+      "statementTarget": [
+        "table",
+        "public",
+        "clip_version"
+      ],
+      "writes": [
+        "s|tbl|public.clip_version",
+        "n|tbl|public.clip_version",
+        "e|tbl|public.clip_version",
+        "n|rel|public.clip_version",
+        "n|type|public.clip_version",
+        "n|rel|public.clip_version_pkey"
+      ],
+      "reads": [
+        "n|sch|public",
+        "n|enum|public.version_status"
+      ]
+    },
+    {
+      "statementType": "create_index",
+      "statementTarget": [
+        "index",
+        "public",
+        "clip_version",
+        "clip_version_number_idx"
+      ],
+      "writes": [
+        "s|idx|public.clip_version_number_idx",
+        "n|idx|public.clip_version_number_idx",
+        "e|idx|public.clip_version_number_idx",
+        "n|rel|public.clip_version_number_idx"
+      ],
+      "reads": [
+        "n|tbl|public.clip_version",
+        "n|sch|public",
+        "n|col|public.clip_version.clip_id",
+        "n|col|public.clip_version.number"
+      ]
+    },
+    {
+      "statementType": "create_index",
+      "statementTarget": [
+        "index",
+        "public",
+        "clip_version",
+        "clip_version_request_idx"
+      ],
+      "writes": [
+        "s|idx|public.clip_version_request_idx",
+        "n|idx|public.clip_version_request_idx",
+        "e|idx|public.clip_version_request_idx",
+        "n|rel|public.clip_version_request_idx"
+      ],
+      "reads": [
+        "n|tbl|public.clip_version",
+        "n|sch|public",
+        "n|col|public.clip_version.clip_id",
+        "n|col|public.clip_version.request_id"
+      ]
+    },
+    {
+      "statementType": "create_index",
+      "statementTarget": [
+        "index",
+        "public",
+        "clip_version",
+        "clip_version_queue_idx"
+      ],
+      "writes": [
+        "s|idx|public.clip_version_queue_idx",
+        "n|idx|public.clip_version_queue_idx",
+        "e|idx|public.clip_version_queue_idx",
+        "n|rel|public.clip_version_queue_idx"
+      ],
+      "reads": [
+        "n|tbl|public.clip_version",
+        "n|sch|public",
+        "n|col|public.clip_version.status",
+        "n|col|public.clip_version.created_at"
+      ]
+    },
+    {
+      "statementType": "create_fk",
+      "statementTarget": [
+        "table",
+        "public",
+        "clip_version"
+      ],
+      "writes": [
+        "s|fk|public.clip_version.clip_version_clip_id_clip_id_fkey",
+        "n|fk|public.clip_version.clip_version_clip_id_clip_id_fkey",
+        "e|fk|public.clip_version.clip_version_clip_id_clip_id_fkey",
+        "n|con|public.clip_version.clip_version_clip_id_clip_id_fkey"
+      ],
+      "reads": [
+        "n|tbl|public.clip_version",
+        "n|sch|public",
+        "n|tbl|public.clip",
+        "n|sch|public",
+        "n|col|public.clip_version.clip_id",
+        "n|col|public.clip.id",
+        "e|uniqueness|public.clip.id"
+      ]
+    }
+  ],
+  "deltas": [
+    {
+      "op": "create",
+      "row": {
+        "schema": "public",
+        "name": "clip_version",
+        "isRlsEnabled": false,
+        "entityType": "tables"
+      }
+    },
+    {
+      "op": "create",
+      "row": {
+        "schema": "public",
+        "name": "version_status",
+        "values": [
+          "queued",
+          "rendering",
+          "ready",
+          "failed"
+        ],
+        "entityType": "enums"
+      }
+    },
+    {
+      "op": "create",
+      "row": {
+        "schema": "public",
+        "table": "clip_version",
+        "name": "id",
+        "type": "uuid",
+        "typeSchema": null,
+        "notNull": true,
+        "dimensions": 0,
+        "default": "gen_random_uuid()",
+        "generated": null,
+        "identity": null,
+        "entityType": "columns"
+      }
+    },
+    {
+      "op": "create",
+      "row": {
+        "schema": "public",
+        "table": "clip_version",
+        "name": "clip_id",
+        "type": "uuid",
+        "typeSchema": null,
+        "notNull": true,
+        "dimensions": 0,
+        "default": null,
+        "generated": null,
+        "identity": null,
+        "entityType": "columns"
+      }
+    },
+    {
+      "op": "create",
+      "row": {
+        "schema": "public",
+        "table": "clip_version",
+        "name": "number",
+        "type": "smallint",
+        "typeSchema": null,
+        "notNull": true,
+        "dimensions": 0,
+        "default": null,
+        "generated": null,
+        "identity": null,
+        "entityType": "columns"
+      }
+    },
+    {
+      "op": "create",
+      "row": {
+        "schema": "public",
+        "table": "clip_version",
+        "name": "request_id",
+        "type": "uuid",
+        "typeSchema": null,
+        "notNull": true,
+        "dimensions": 0,
+        "default": null,
+        "generated": null,
+        "identity": null,
+        "entityType": "columns"
+      }
+    },
+    {
+      "op": "create",
+      "row": {
+        "schema": "public",
+        "table": "clip_version",
+        "name": "start_seconds",
+        "type": "double precision",
+        "typeSchema": null,
+        "notNull": true,
+        "dimensions": 0,
+        "default": null,
+        "generated": null,
+        "identity": null,
+        "entityType": "columns"
+      }
+    },
+    {
+      "op": "create",
+      "row": {
+        "schema": "public",
+        "table": "clip_version",
+        "name": "end_seconds",
+        "type": "double precision",
+        "typeSchema": null,
+        "notNull": true,
+        "dimensions": 0,
+        "default": null,
+        "generated": null,
+        "identity": null,
+        "entityType": "columns"
+      }
+    },
+    {
+      "op": "create",
+      "row": {
+        "schema": "public",
+        "table": "clip_version",
+        "name": "crop_x",
+        "type": "double precision",
+        "typeSchema": null,
+        "notNull": true,
+        "dimensions": 0,
+        "default": null,
+        "generated": null,
+        "identity": null,
+        "entityType": "columns"
+      }
+    },
+    {
+      "op": "create",
+      "row": {
+        "schema": "public",
+        "table": "clip_version",
+        "name": "captions",
+        "type": "boolean",
+        "typeSchema": null,
+        "notNull": true,
+        "dimensions": 0,
+        "default": null,
+        "generated": null,
+        "identity": null,
+        "entityType": "columns"
+      }
+    },
+    {
+      "op": "create",
+      "row": {
+        "schema": "public",
+        "table": "clip_version",
+        "name": "caption_edits",
+        "type": "jsonb",
+        "typeSchema": null,
+        "notNull": true,
+        "dimensions": 0,
+        "default": null,
+        "generated": null,
+        "identity": null,
+        "entityType": "columns"
+      }
+    },
+    {
+      "op": "create",
+      "row": {
+        "schema": "public",
+        "table": "clip_version",
+        "name": "status",
+        "type": "version_status",
+        "typeSchema": "public",
+        "notNull": true,
+        "dimensions": 0,
+        "default": "'queued'",
+        "generated": null,
+        "identity": null,
+        "entityType": "columns"
+      }
+    },
+    {
+      "op": "create",
+      "row": {
+        "schema": "public",
+        "table": "clip_version",
+        "name": "error",
+        "type": "text",
+        "typeSchema": null,
+        "notNull": false,
+        "dimensions": 0,
+        "default": null,
+        "generated": null,
+        "identity": null,
+        "entityType": "columns"
+      }
+    },
+    {
+      "op": "create",
+      "row": {
+        "schema": "public",
+        "table": "clip_version",
+        "name": "file",
+        "type": "text",
+        "typeSchema": null,
+        "notNull": false,
+        "dimensions": 0,
+        "default": null,
+        "generated": null,
+        "identity": null,
+        "entityType": "columns"
+      }
+    },
+    {
+      "op": "create",
+      "row": {
+        "schema": "public",
+        "table": "clip_version",
+        "name": "attempt",
+        "type": "integer",
+        "typeSchema": null,
+        "notNull": true,
+        "dimensions": 0,
+        "default": "0",
+        "generated": null,
+        "identity": null,
+        "entityType": "columns"
+      }
+    },
+    {
+      "op": "create",
+      "row": {
+        "schema": "public",
+        "table": "clip_version",
+        "name": "attempts_left",
+        "type": "smallint",
+        "typeSchema": null,
+        "notNull": true,
+        "dimensions": 0,
+        "default": null,
+        "generated": null,
+        "identity": null,
+        "entityType": "columns"
+      }
+    },
+    {
+      "op": "create",
+      "row": {
+        "schema": "public",
+        "table": "clip_version",
+        "name": "lease_expires_at",
+        "type": "timestamp with time zone",
+        "typeSchema": null,
+        "notNull": false,
+        "dimensions": 0,
+        "default": null,
+        "generated": null,
+        "identity": null,
+        "entityType": "columns"
+      }
+    },
+    {
+      "op": "create",
+      "row": {
+        "schema": "public",
+        "table": "clip_version",
+        "name": "created_at",
+        "type": "timestamp with time zone",
+        "typeSchema": null,
+        "notNull": true,
+        "dimensions": 0,
+        "default": "now()",
+        "generated": null,
+        "identity": null,
+        "entityType": "columns"
+      }
+    },
+    {
+      "op": "create",
+      "row": {
+        "schema": "public",
+        "table": "clip_version",
+        "name": "clip_version_number_idx",
+        "nameExplicit": true,
+        "columns": [
+          {
+            "value": "clip_id",
+            "isExpression": false,
+            "asc": true,
+            "nullsFirst": false,
+            "opclass": null
+          },
+          {
+            "value": "number",
+            "isExpression": false,
+            "asc": true,
+            "nullsFirst": false,
+            "opclass": null
+          }
+        ],
+        "isUnique": true,
+        "where": null,
+        "with": "",
+        "method": "btree",
+        "concurrently": false,
+        "entityType": "indexes"
+      }
+    },
+    {
+      "op": "create",
+      "row": {
+        "schema": "public",
+        "table": "clip_version",
+        "name": "clip_version_request_idx",
+        "nameExplicit": true,
+        "columns": [
+          {
+            "value": "clip_id",
+            "isExpression": false,
+            "asc": true,
+            "nullsFirst": false,
+            "opclass": null
+          },
+          {
+            "value": "request_id",
+            "isExpression": false,
+            "asc": true,
+            "nullsFirst": false,
+            "opclass": null
+          }
+        ],
+        "isUnique": true,
+        "where": null,
+        "with": "",
+        "method": "btree",
+        "concurrently": false,
+        "entityType": "indexes"
+      }
+    },
+    {
+      "op": "create",
+      "row": {
+        "schema": "public",
+        "table": "clip_version",
+        "name": "clip_version_queue_idx",
+        "nameExplicit": true,
+        "columns": [
+          {
+            "value": "status",
+            "isExpression": false,
+            "asc": true,
+            "nullsFirst": false,
+            "opclass": null
+          },
+          {
+            "value": "created_at",
+            "isExpression": false,
+            "asc": true,
+            "nullsFirst": false,
+            "opclass": null
+          }
+        ],
+        "isUnique": false,
+        "where": null,
+        "with": "",
+        "method": "btree",
+        "concurrently": false,
+        "entityType": "indexes"
+      }
+    },
+    {
+      "op": "create",
+      "row": {
+        "schema": "public",
+        "table": "clip_version",
+        "name": "clip_version_clip_id_clip_id_fkey",
+        "nameExplicit": false,
+        "columns": [
+          "clip_id"
+        ],
+        "schemaTo": "public",
+        "tableTo": "clip",
+        "columnsTo": [
+          "id"
+        ],
+        "onUpdate": "NO ACTION",
+        "onDelete": "CASCADE",
+        "entityType": "fks"
+      }
+    },
+    {
+      "op": "create",
+      "row": {
+        "schema": "public",
+        "table": "clip_version",
+        "name": "clip_version_pkey",
+        "columns": [
+          "id"
+        ],
+        "nameExplicit": false,
+        "entityType": "pks"
+      }
+    },
+    {
+      "op": "create",
+      "row": {
+        "schema": "public",
+        "table": "clip_version",
+        "name": "clip_version_number",
+        "value": "\"number\" >= 1",
+        "entityType": "checks"
+      }
+    },
+    {
+      "op": "create",
+      "row": {
+        "schema": "public",
+        "table": "clip_version",
+        "name": "clip_version_length",
+        "value": "\"start_seconds\" >= 0 and \"end_seconds\" - \"start_seconds\" between 1 and 180",
+        "entityType": "checks"
+      }
+    },
+    {
+      "op": "create",
+      "row": {
+        "schema": "public",
+        "table": "clip_version",
+        "name": "clip_version_crop",
+        "value": "\"crop_x\" between 0 and 1",
+        "entityType": "checks"
+      }
+    },
+    {
+      "op": "create",
+      "row": {
+        "schema": "public",
+        "table": "clip_version",
+        "name": "clip_version_edits_array",
+        "value": "jsonb_typeof(\"caption_edits\") = 'array'",
+        "entityType": "checks"
+      }
+    },
+    {
+      "op": "create",
+      "row": {
+        "schema": "public",
+        "table": "clip_version",
+        "name": "clip_version_lease_iff_rendering",
+        "value": "(\"status\" = 'rendering') = (\"lease_expires_at\" is not null)",
+        "entityType": "checks"
+      }
+    },
+    {
+      "op": "create",
+      "row": {
+        "schema": "public",
+        "table": "clip_version",
+        "name": "clip_version_file_iff_ready",
+        "value": "(\"status\" = 'ready') = (\"file\" is not null)",
+        "entityType": "checks"
+      }
+    }
+  ]
+}

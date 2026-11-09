@@ -1,0 +1,99 @@
+name: clipradar
+
+x-database-url: &database-url postgresql://postgres:${POSTGRES_PASSWORD:-password}@postgres:5432/clipradar
+
+services:
+  web:
+    build:
+      context: .
+      dockerfile: apps/web/Dockerfile
+      secrets:
+        - web_env
+    init: true
+    ports:
+      - "${WEB_PORT:-3001}:3001"
+    environment:
+      BETTER_AUTH_URL: ${BETTER_AUTH_URL:-http://localhost:3001}
+      BETTER_AUTH_SECRET: ${BETTER_AUTH_SECRET:?Set BETTER_AUTH_SECRET in .env (openssl rand -hex 32)}
+      DATABASE_URL: *database-url
+      DATA_DIR: /data
+      MAX_UPLOAD_MB: ${MAX_UPLOAD_MB:-4096}
+    volumes:
+      - clipradar_media:/data
+    depends_on:
+      postgres:
+        condition: service_healthy
+    healthcheck:
+      test:
+        [
+          "CMD",
+          "node",
+          "-e",
+          "fetch('http://localhost:3001/').then((r) => process.exit(r.ok ? 0 : 1)).catch(() => process.exit(1))",
+        ]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 20s
+    restart: unless-stopped
+
+  worker:
+    build:
+      context: .
+      dockerfile: apps/worker/Dockerfile
+    init: true
+    environment:
+      DATABASE_URL: *database-url
+      DATA_DIR: /data
+      WHISPER_URL: http://whisper:8000
+      WHISPER_TIMEOUT_MINUTES: ${WHISPER_TIMEOUT_MINUTES:-120}
+      LLM_BASE_URL: ${LLM_BASE_URL:-https://api.openai.com/v1}
+      LLM_API_KEY: ${LLM_API_KEY:-}
+      LLM_MODEL: ${LLM_MODEL:-gpt-5.4-mini}
+      LLM_MAX_TRANSCRIPT_CHARS: ${LLM_MAX_TRANSCRIPT_CHARS:-60000}
+    volumes:
+      - clipradar_media:/data
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    depends_on:
+      postgres:
+        condition: service_healthy
+      whisper:
+        condition: service_healthy
+    stop_grace_period: 30s
+    restart: unless-stopped
+
+  whisper:
+    build:
+      context: apps/whisper
+      args:
+        WHISPER_MODEL: ${WHISPER_MODEL:-small}
+    environment:
+      WHISPER_THREADS: ${WHISPER_THREADS:-4}
+    restart: unless-stopped
+
+  postgres:
+    image: postgres:18
+    container_name: clipradar-postgres
+    environment:
+      POSTGRES_DB: clipradar
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-password}
+    ports:
+      - "127.0.0.1:${POSTGRES_PORT:-5432}:5432"
+    volumes:
+      - clipradar_postgres_data:/var/lib/postgresql
+    healthcheck:
+      test: [ "CMD-SHELL", "pg_isready -U postgres" ]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    restart: unless-stopped
+
+volumes:
+  clipradar_postgres_data:
+  clipradar_media:
+
+secrets:
+  web_env:
+    file: .env

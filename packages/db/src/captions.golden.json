@@ -1,0 +1,2850 @@
+{
+  "words": {
+    "whisper": [
+      { "start": 0, "end": 0.1, "text": "the" },
+      { "start": 0.1, "end": 0.36, "text": "target" },
+      { "start": 0.36, "end": 0.78, "text": "maximum" },
+      { "start": 0.78, "end": 1.28, "text": "number" },
+      { "start": 1.28, "end": 1.48, "text": "of" },
+      { "start": 1.48, "end": 1.78, "text": "items" },
+      { "start": 1.78, "end": 2.16, "text": "before" },
+      { "start": 2.16, "end": 2.64, "text": "evicting" },
+      { "start": 2.64, "end": 2.86, "text": "the" },
+      { "start": 2.86, "end": 3.08, "text": "least" },
+      { "start": 3.08, "end": 3.56, "text": "recently" },
+      { "start": 3.56, "end": 3.94, "text": "used" },
+      { "start": 3.94, "end": 4.34, "text": "items." },
+      { "start": 4.76, "end": 4.88, "text": "By" },
+      { "start": 4.88, "end": 5.28, "text": "default" },
+      { "start": 5.28, "end": 5.54, "text": "max" },
+      { "start": 5.54, "end": 5.92, "text": "age" },
+      { "start": 5.92, "end": 6.08, "text": "will" },
+      { "start": 6.08, "end": 6.24, "text": "be" },
+      { "start": 6.24, "end": 6.7, "text": "infinity," },
+      { "start": 7.08, "end": 7.3, "text": "which" },
+      { "start": 7.3, "end": 7.58, "text": "means" },
+      { "start": 7.58, "end": 7.82, "text": "that" },
+      { "start": 7.82, "end": 8.12, "text": "items" },
+      { "start": 8.12, "end": 8.32, "text": "will" },
+      { "start": 8.32, "end": 8.56, "text": "never" },
+      { "start": 8.56, "end": 9.18, "text": "expire." },
+      { "start": 9.6, "end": 9.96, "text": "Individual" },
+      { "start": 9.96, "end": 10.72, "text": "expiration" },
+      { "start": 10.72, "end": 11.04, "text": "of" },
+      { "start": 11.04, "end": 11.14, "text": "an" },
+      { "start": 11.14, "end": 11.38, "text": "item" },
+      { "start": 11.38, "end": 11.6, "text": "can" },
+      { "start": 11.6, "end": 11.78, "text": "be" },
+      { "start": 11.78, "end": 12.26, "text": "specified" },
+      { "start": 12.26, "end": 12.62, "text": "by" },
+      { "start": 12.62, "end": 12.8, "text": "the" },
+      { "start": 12.8, "end": 13.1, "text": "set." },
+      { "start": 13.44, "end": 13.7, "text": "Key." },
+      { "start": 14, "end": 14.3, "text": "Value." },
+      { "start": 14.7, "end": 15, "text": "Options." },
+      { "start": 15.52, "end": 15.74, "text": "Method." },
+      { "start": 16.16, "end": 16.36, "text": "Called" },
+      { "start": 16.36, "end": 16.62, "text": "right" },
+      { "start": 16.62, "end": 16.96, "text": "before" },
+      { "start": 16.96, "end": 17.2, "text": "an" },
+      { "start": 17.2, "end": 17.42, "text": "item" },
+      { "start": 17.42, "end": 17.62, "text": "is" },
+      { "start": 17.62, "end": 17.98, "text": "evicted" },
+      { "start": 17.98, "end": 18.24, "text": "from" },
+      { "start": 18.24, "end": 18.38, "text": "the" },
+      { "start": 18.38, "end": 18.64, "text": "cache" },
+      { "start": 18.64, "end": 18.86, "text": "due" },
+      { "start": 18.86, "end": 19.02, "text": "to" },
+      { "start": 19.02, "end": 19.48, "text": "capacity" },
+      { "start": 19.48, "end": 20, "text": "pressure" },
+      { "start": 20, "end": 20.26, "text": "or" },
+      { "start": 20.26, "end": 20.88, "text": "TTL" },
+      { "start": 20.88, "end": 21.46, "text": "expiration." },
+      { "start": 21.94, "end": 22.32, "text": "Useful" },
+      { "start": 22.32, "end": 22.48, "text": "for" },
+      { "start": 22.48, "end": 22.76, "text": "side" },
+      { "start": 22.76, "end": 23.26, "text": "-defects" },
+      { "start": 23.26, "end": 23.32, "text": "or" },
+      { "start": 23.32, "end": 23.48, "text": "for" },
+      { "start": 23.48, "end": 23.76, "text": "items" },
+      { "start": 23.76, "end": 24.04, "text": "like" },
+      { "start": 24.04, "end": 24.46, "text": "object" },
+      { "start": 24.46, "end": 24.82, "text": "URLs" },
+      { "start": 24.82, "end": 25.2, "text": "that" },
+      { "start": 25.2, "end": 25.42, "text": "need" },
+      { "start": 25.42, "end": 25.9, "text": "explicit" },
+      { "start": 25.9, "end": 26.5, "text": "cleanup," },
+      { "start": 26.82, "end": 27.14, "text": "revoke" },
+      { "start": 27.14, "end": 27.48, "text": "object" },
+      { "start": 27.48, "end": 27.96, "text": "URL." },
+      { "start": 27.96, "end": 28.56, "text": "This" },
+      { "start": 28.56, "end": 29.04, "text": "callback" },
+      { "start": 29.04, "end": 29.28, "text": "is" },
+      { "start": 29.28, "end": 29.5, "text": "not" },
+      { "start": 29.5, "end": 29.8, "text": "called" },
+      { "start": 29.8, "end": 30, "text": "for" },
+      { "start": 30, "end": 30.36, "text": "manual" },
+      { "start": 30.36, "end": 31.04, "text": "removals" },
+      { "start": 31.04, "end": 31.28, "text": "via" },
+      { "start": 31.28, "end": 31.66, "text": "delete" },
+      { "start": 31.66, "end": 32.1, "text": "or" },
+      { "start": 32.1, "end": 32.42, "text": "clear" },
+      { "start": 32.42, "end": 32.92, "text": "the" },
+      { "start": 32.92, "end": 33.24, "text": "instance" },
+      { "start": 33.24, "end": 33.52, "text": "is" },
+      { "start": 33.52, "end": 33.9, "text": "iterable" },
+      { "start": 33.9, "end": 34.12, "text": "so" },
+      { "start": 34.12, "end": 34.3, "text": "you" },
+      { "start": 34.3, "end": 34.54, "text": "can" },
+      { "start": 34.54, "end": 34.76, "text": "use" },
+      { "start": 34.76, "end": 34.88, "text": "it" },
+      { "start": 34.88, "end": 35.28, "text": "directly" },
+      { "start": 35.28, "end": 35.56, "text": "in" },
+      { "start": 35.56, "end": 35.64, "text": "a" },
+      { "start": 35.64, "end": 35.94, "text": "for" },
+      { "start": 35.94, "end": 36.34, "text": "of" },
+      { "start": 36.34, "end": 36.58, "text": "loop" },
+      { "start": 36.58, "end": 37.3, "text": "individual" },
+      { "start": 37.3, "end": 38.1, "text": "expiration" },
+      { "start": 38.1, "end": 38.34, "text": "of" },
+      { "start": 38.34, "end": 38.48, "text": "an" },
+      { "start": 38.48, "end": 38.7, "text": "item" },
+      { "start": 38.7, "end": 38.92, "text": "can" },
+      { "start": 38.92, "end": 39.08, "text": "be" },
+      { "start": 39.08, "end": 39.54, "text": "specified" },
+      { "start": 39.54, "end": 39.9, "text": "with" },
+      { "start": 39.9, "end": 40.08, "text": "the" },
+      { "start": 40.08, "end": 40.36, "text": "max" },
+      { "start": 40.36, "end": 40.56, "text": "age" },
+      { "start": 40.56, "end": 41.04, "text": "option" },
+      { "start": 41.04, "end": 41.48, "text": "if" },
+      { "start": 41.48, "end": 41.7, "text": "not" },
+      { "start": 41.7, "end": 42.44, "text": "specified" },
+      { "start": 42.44, "end": 42.92, "text": "the" },
+      { "start": 42.92, "end": 43.22, "text": "global" },
+      { "start": 43.22, "end": 43.58, "text": "max" },
+      { "start": 43.58, "end": 43.92, "text": "age" },
+      { "start": 43.92, "end": 44.24, "text": "value" },
+      { "start": 44.24, "end": 44.46, "text": "will" },
+      { "start": 44.46, "end": 44.64, "text": "be" },
+      { "start": 44.64, "end": 44.88, "text": "used" },
+      { "start": 44.88, "end": 45.04, "text": "in" },
+      { "start": 45.04, "end": 45.3, "text": "case" },
+      { "start": 45.3, "end": 45.5, "text": "it" },
+      { "start": 45.5, "end": 45.64, "text": "is" },
+      { "start": 45.64, "end": 46.14, "text": "specified" },
+      { "start": 46.14, "end": 46.42, "text": "on" },
+      { "start": 46.42, "end": 46.54, "text": "the" },
+      { "start": 46.54, "end": 47.12, "text": "constructor" },
+      { "start": 47.12, "end": 47.84, "text": "otherwise" },
+      { "start": 47.84, "end": 48.16, "text": "the" },
+      { "start": 48.16, "end": 48.48, "text": "item" },
+      { "start": 48.48, "end": 48.66, "text": "will" },
+      { "start": 48.66, "end": 48.9, "text": "never" },
+      { "start": 48.9, "end": 49.56, "text": "expire" },
+      { "start": 49.56, "end": 50.04, "text": "get" },
+      { "start": 50.04, "end": 50.22, "text": "the" },
+      { "start": 50.22, "end": 50.52, "text": "remaining" },
+      { "start": 50.52, "end": 50.92, "text": "time" },
+      { "start": 50.92, "end": 51.12, "text": "to" },
+      { "start": 51.12, "end": 51.3, "text": "live" },
+      { "start": 51.3, "end": 51.46, "text": "in" },
+      { "start": 51.46, "end": 51.9, "text": "milliseconds" },
+      { "start": 51.9, "end": 52.26, "text": "for" },
+      { "start": 52.26, "end": 52.38, "text": "the" },
+      { "start": 52.38, "end": 52.64, "text": "given" },
+      { "start": 52.64, "end": 53, "text": "item" },
+      { "start": 53, "end": 53.44, "text": "or" },
+      { "start": 53.44, "end": 53.98, "text": "undefined" },
+      { "start": 53.98, "end": 54.16, "text": "if" },
+      { "start": 54.16, "end": 54.3, "text": "the" },
+      { "start": 54.3, "end": 54.58, "text": "item" },
+      { "start": 54.58, "end": 54.76, "text": "is" },
+      { "start": 54.76, "end": 54.96, "text": "not" },
+      { "start": 54.96, "end": 55.1, "text": "in" },
+      { "start": 55.1, "end": 55.22, "text": "the" },
+      { "start": 55.22, "end": 55.5, "text": "cache." },
+      { "start": 55.94, "end": 56.44, "text": "Returns" },
+      { "start": 56.44, "end": 56.64, "text": "true" },
+      { "start": 56.64, "end": 56.8, "text": "if" },
+      { "start": 56.8, "end": 56.94, "text": "the" },
+      { "start": 56.94, "end": 57.22, "text": "item" },
+      { "start": 57.22, "end": 57.38, "text": "is" },
+      { "start": 57.38, "end": 57.68, "text": "removed" },
+      { "start": 57.68, "end": 57.94, "text": "or" },
+      { "start": 57.94, "end": 58.3, "text": "false" },
+      { "start": 58.3, "end": 58.46, "text": "if" },
+      { "start": 58.46, "end": 58.6, "text": "the" },
+      { "start": 58.6, "end": 58.9, "text": "item" },
+      { "start": 58.9, "end": 59.28, "text": "doesn't" },
+      { "start": 59.28, "end": 59.68, "text": "exist." },
+      { "start": 60.06, "end": 60.4, "text": "Update" },
+      { "start": 60.4, "end": 60.62, "text": "the" },
+      { "start": 60.62, "end": 60.88, "text": "max" },
+      { "start": 60.88, "end": 61.22, "text": "size." },
+      { "start": 61.58, "end": 62.12, "text": "Discarding" },
+      { "start": 62.12, "end": 62.38, "text": "items" },
+      { "start": 62.38, "end": 62.64, "text": "as" },
+      { "start": 62.64, "end": 63.24, "text": "necessary." },
+      { "start": 63.86, "end": 64.16, "text": "Insertion" },
+      { "start": 64.16, "end": 64.38, "text": "order" },
+      { "start": 64.38, "end": 64.62, "text": "is" },
+      { "start": 64.62, "end": 64.98, "text": "mostly" },
+      { "start": 64.98, "end": 65.52, "text": "preserved," },
+      { "start": 65.86, "end": 66.02, "text": "though" },
+      { "start": 66.02, "end": 66.24, "text": "this" },
+      { "start": 66.24, "end": 66.4, "text": "is" },
+      { "start": 66.4, "end": 66.58, "text": "not" },
+      { "start": 66.58, "end": 66.7, "text": "a" },
+      { "start": 66.7, "end": 67.02, "text": "strong" },
+      { "start": 67.02, "end": 67.54, "text": "guarantee." },
+      { "start": 68, "end": 68.16, "text": "This" },
+      { "start": 68.16, "end": 68.54, "text": "library" },
+      { "start": 68.54, "end": 69.2, "text": "implements" },
+      { "start": 69.2, "end": 69.38, "text": "a" },
+      { "start": 69.38, "end": 69.68, "text": "variant" },
+      { "start": 69.68, "end": 69.88, "text": "of" },
+      { "start": 69.88, "end": 70.02, "text": "the" },
+      { "start": 70.02, "end": 70.5, "text": "hashlru" },
+      { "start": 70.5, "end": 70.9, "text": "algorithm" },
+      { "start": 70.9, "end": 71.38, "text": "using" },
+      { "start": 71.38, "end": 71.64, "text": "two" },
+      { "start": 71.64, "end": 71.92, "text": "map" },
+      { "start": 71.92, "end": 72.42, "text": "objects." },
+      { "start": 72.86, "end": 73.1, "text": "One" },
+      { "start": 73.1, "end": 73.32, "text": "map" },
+      { "start": 73.32, "end": 73.64, "text": "holds" },
+      { "start": 73.64, "end": 74.02, "text": "recently" },
+      { "start": 74.02, "end": 74.48, "text": "added" },
+      { "start": 74.48, "end": 74.68, "text": "or" },
+      { "start": 74.68, "end": 75.04, "text": "accessed" },
+      { "start": 75.04, "end": 75.54, "text": "entries," },
+      { "start": 75.94, "end": 76.1, "text": "while" },
+      { "start": 76.1, "end": 76.3, "text": "the" },
+      { "start": 76.3, "end": 76.48, "text": "other" },
+      { "start": 76.48, "end": 76.84, "text": "holds" },
+      { "start": 76.84, "end": 77.16, "text": "older" },
+      { "start": 77.16, "end": 77.68, "text": "entries." },
+      { "start": 78.04, "end": 78.2, "text": "When" },
+      { "start": 78.2, "end": 78.34, "text": "the" },
+      { "start": 78.34, "end": 78.66, "text": "recent" },
+      { "start": 78.66, "end": 78.96, "text": "map" },
+      { "start": 78.96, "end": 79.3, "text": "reaches" },
+      { "start": 79.3, "end": 79.68, "text": "max" },
+      { "start": 79.68, "end": 80.14, "text": "size," },
+      { "start": 80.44, "end": 80.56, "text": "it" },
+      { "start": 80.56, "end": 81.04, "text": "replaces" },
+      { "start": 81.04, "end": 81.3, "text": "the" },
+      { "start": 81.3, "end": 81.62, "text": "older" },
+      { "start": 81.62, "end": 81.94, "text": "map" },
+      { "start": 81.94, "end": 82.14, "text": "and" },
+      { "start": 82.14, "end": 82.3, "text": "a" },
+      { "start": 82.3, "end": 82.38, "text": "new" },
+      { "start": 82.38, "end": 82.68, "text": "recent" },
+      { "start": 82.68, "end": 82.92, "text": "map" },
+      { "start": 82.92, "end": 83.18, "text": "is" },
+      { "start": 83.18, "end": 83.58, "text": "created." },
+      { "start": 84, "end": 84.16, "text": "This" },
+      { "start": 84.16, "end": 84.58, "text": "avoids" },
+      { "start": 84.58, "end": 84.74, "text": "the" },
+      { "start": 84.74, "end": 85.1, "text": "frequent" },
+      { "start": 85.1, "end": 85.42, "text": "delete" },
+      { "start": 85.42, "end": 86.02, "text": "operations" },
+      { "start": 86.02, "end": 86.64, "text": "required" },
+      { "start": 86.64, "end": 86.98, "text": "by" },
+      { "start": 86.98, "end": 87.16, "text": "a" },
+      { "start": 87.16, "end": 87.56, "text": "traditional" },
+      { "start": 87.56, "end": 87.9, "text": "linked" },
+      { "start": 87.9, "end": 88.18, "text": "list" },
+      { "start": 88.18, "end": 88.78, "text": "LRU" },
+      { "start": 88.78, "end": 88.92, "text": "and" },
+      { "start": 88.92, "end": 89.18, "text": "supports" },
+      { "start": 89.18, "end": 89.6, "text": "keys" },
+      { "start": 89.6, "end": 89.8, "text": "of" },
+      { "start": 89.8, "end": 90, "text": "any" },
+      { "start": 90, "end": 90.28, "text": "type" },
+      { "start": 90.28, "end": 90.48, "text": "and" },
+      { "start": 90.48, "end": 90.98, "text": "undefined" },
+      { "start": 90.98, "end": 91.48, "text": "values." },
+      { "start": 91.96, "end": 92.04, "text": "The" },
+      { "start": 92.04, "end": 92.48, "text": "tradeoff" },
+      { "start": 92.48, "end": 92.68, "text": "is" },
+      { "start": 92.68, "end": 92.88, "text": "that" },
+      { "start": 92.88, "end": 93.02, "text": "the" },
+      { "start": 93.02, "end": 93.22, "text": "two" },
+      { "start": 93.22, "end": 93.5, "text": "maps" },
+      { "start": 93.5, "end": 93.74, "text": "may" },
+      { "start": 93.74, "end": 94.1, "text": "physically" },
+      { "start": 94.1, "end": 94.68, "text": "retain" },
+      { "start": 94.68, "end": 94.86, "text": "up" },
+      { "start": 94.86, "end": 95, "text": "to" },
+      { "start": 95, "end": 95.28, "text": "twice" },
+      { "start": 95.28, "end": 95.48, "text": "the" },
+      { "start": 95.48, "end": 95.78, "text": "target" },
+      { "start": 95.78, "end": 96.04, "text": "map" },
+      { "start": 96.04, "end": 96.4, "text": "size" },
+      { "start": 96.4, "end": 96.78, "text": "between" },
+      { "start": 96.78, "end": 97.46, "text": "rotations." },
+      { "start": 97.92, "end": 98.12, "text": "Use" },
+      { "start": 98.12, "end": 98.3, "text": "a" },
+      { "start": 98.3, "end": 98.54, "text": "strict" },
+      { "start": 98.54, "end": 98.8, "text": "size" },
+      { "start": 98.8, "end": 99.12, "text": "cache" },
+      { "start": 99.12, "end": 99.36, "text": "when" },
+      { "start": 99.36, "end": 99.56, "text": "that" },
+      { "start": 99.56, "end": 99.94, "text": "temporary" },
+      { "start": 99.94, "end": 100.44, "text": "memory" },
+      { "start": 100.44, "end": 101, "text": "overhead" },
+      { "start": 101, "end": 101.22, "text": "is" },
+      { "start": 101.22, "end": 101.76, "text": "unacceptable." },
+      { "start": 102.28, "end": 102.76, "text": "Resolves" },
+      { "start": 102.76, "end": 102.94, "text": "a" },
+      { "start": 102.94, "end": 103.28, "text": "CSS" },
+      { "start": 103.28, "end": 103.74, "text": "color" },
+      { "start": 103.74, "end": 104.08, "text": "string" },
+      { "start": 104.08, "end": 104.36, "text": "into" },
+      { "start": 104.36, "end": 104.58, "text": "its" },
+      { "start": 104.58, "end": 105.02, "text": "computed" },
+      { "start": 105.02, "end": 105.22, "text": "or" },
+      { "start": 105.22, "end": 105.68, "text": "specified" },
+      { "start": 105.68, "end": 106.3, "text": "value." },
+      { "start": 106.64, "end": 107, "text": "System" },
+      { "start": 107, "end": 107.4, "text": "colors" },
+      { "start": 107.4, "end": 107.6, "text": "are" },
+      { "start": 107.6, "end": 107.8, "text": "not" },
+      { "start": 107.8, "end": 108.28, "text": "supported." },
+      { "start": 108.66, "end": 108.8, "text": "The" },
+      { "start": 108.8, "end": 109.2, "text": "following" },
+      { "start": 109.2, "end": 109.76, "text": "resources" },
+      { "start": 109.76, "end": 110.1, "text": "have" },
+      { "start": 110.1, "end": 110.3, "text": "been" },
+      { "start": 110.3, "end": 110.4, "text": "of" },
+      { "start": 110.4, "end": 110.6, "text": "great" },
+      { "start": 110.6, "end": 110.88, "text": "help" },
+      { "start": 110.88, "end": 111.06, "text": "in" },
+      { "start": 111.06, "end": 111.14, "text": "the" },
+      { "start": 111.14, "end": 111.5, "text": "development" },
+      { "start": 111.5, "end": 111.88, "text": "of" },
+      { "start": 111.88, "end": 112.06, "text": "this" },
+      { "start": 112.06, "end": 112.5, "text": "library," },
+      { "start": 112.92, "end": 113.14, "text": "checks" },
+      { "start": 113.14, "end": 113.34, "text": "if" },
+      { "start": 113.34, "end": 113.52, "text": "an" },
+      { "start": 113.52, "end": 113.76, "text": "element" },
+      { "start": 113.76, "end": 114.22, "text": "matches" },
+      { "start": 114.22, "end": 114.48, "text": "a" },
+      { "start": 114.48, "end": 114.84, "text": "CSS" },
+      { "start": 114.84, "end": 115.38, "text": "selector" },
+      { "start": 115.38, "end": 115.6, "text": "and" },
+      { "start": 115.6, "end": 115.96, "text": "returns" },
+      { "start": 115.96, "end": 116.44, "text": "additional" },
+      { "start": 116.44, "end": 117.08, "text": "abstract" },
+      { "start": 117.08, "end": 117.32, "text": "syntax" },
+      { "start": 117.32, "end": 117.9, "text": "tree," },
+      { "start": 118.24, "end": 118.6, "text": "AST" },
+      { "start": 118.6, "end": 119.12, "text": "information," },
+      { "start": 119.7, "end": 120.1, "text": "parses" }
+    ],
+    "wide": [
+      { "start": 0, "end": 0.25, "text": "今天" },
+      { "start": 0.3, "end": 0.55, "text": "我们" },
+      { "start": 0.6, "end": 0.85, "text": "来谈" },
+      { "start": 0.9, "end": 1.15, "text": "一个" },
+      { "start": 1.2, "end": 1.45, "text": "改变" },
+      { "start": 1.5, "end": 1.75, "text": "工作" },
+      { "start": 1.8, "end": 2.05, "text": "习惯" },
+      { "start": 2.1, "end": 2.35, "text": "的" },
+      { "start": 2.4, "end": 2.65, "text": "方法。" },
+      { "start": 2.7, "end": 2.95, "text": "ありがとう" },
+      { "start": 3, "end": 3.25, "text": "ございます。" },
+      { "start": 3.3, "end": 3.55, "text": "สวัสดี" },
+      { "start": 3.6, "end": 3.85, "text": "ครับ" },
+      { "start": 3.9, "end": 4.15, "text": "OK" },
+      { "start": 4.2, "end": 4.45, "text": "今天" },
+      { "start": 4.5, "end": 4.75, "text": "我们" },
+      { "start": 4.8, "end": 5.05, "text": "来谈" },
+      { "start": 5.1, "end": 5.35, "text": "一个" },
+      { "start": 5.4, "end": 5.65, "text": "改变" },
+      { "start": 5.7, "end": 5.95, "text": "工作" },
+      { "start": 6, "end": 6.25, "text": "习惯" },
+      { "start": 6.3, "end": 6.55, "text": "的" },
+      { "start": 6.6, "end": 6.85, "text": "方法。" },
+      { "start": 6.9, "end": 7.15, "text": "ありがとう" },
+      { "start": 7.2, "end": 7.45, "text": "ございます。" },
+      { "start": 7.5, "end": 7.75, "text": "สวัสดี" },
+      { "start": 7.8, "end": 8.05, "text": "ครับ" },
+      { "start": 8.1, "end": 8.35, "text": "OK" },
+      { "start": 8.4, "end": 8.65, "text": "今天" },
+      { "start": 8.7, "end": 8.95, "text": "我们" },
+      { "start": 9, "end": 9.25, "text": "来谈" },
+      { "start": 10.5, "end": 10.75, "text": "一个" },
+      { "start": 10.8, "end": 11.05, "text": "改变" },
+      { "start": 11.1, "end": 11.35, "text": "工作" },
+      { "start": 11.4, "end": 11.65, "text": "习惯" },
+      { "start": 11.7, "end": 11.95, "text": "的" },
+      { "start": 12, "end": 12.25, "text": "方法。" },
+      { "start": 12.3, "end": 12.55, "text": "ありがとう" },
+      { "start": 12.6, "end": 12.85, "text": "ございます。" },
+      { "start": 12.9, "end": 13.15, "text": "สวัสดี" },
+      { "start": 13.2, "end": 13.45, "text": "ครับ" },
+      { "start": 13.5, "end": 13.75, "text": "OK" },
+      { "start": 13.8, "end": 14.05, "text": "今天" },
+      { "start": 14.1, "end": 14.35, "text": "我们" },
+      { "start": 14.4, "end": 14.65, "text": "来谈" },
+      { "start": 14.7, "end": 14.95, "text": "一个" },
+      { "start": 15, "end": 15.25, "text": "改变" },
+      { "start": 15.3, "end": 15.55, "text": "工作" },
+      { "start": 15.6, "end": 15.85, "text": "习惯" },
+      { "start": 15.9, "end": 16.15, "text": "的" },
+      { "start": 16.2, "end": 16.45, "text": "方法。" },
+      { "start": 16.5, "end": 16.75, "text": "ありがとう" },
+      { "start": 16.8, "end": 17.05, "text": "ございます。" },
+      { "start": 17.1, "end": 17.35, "text": "สวัสดี" },
+      { "start": 17.4, "end": 17.65, "text": "ครับ" },
+      { "start": 17.7, "end": 17.95, "text": "OK" },
+      { "start": 18, "end": 18.25, "text": "今天" },
+      { "start": 18.3, "end": 18.55, "text": "我们" },
+      { "start": 18.6, "end": 18.85, "text": "来谈" },
+      { "start": 18.9, "end": 19.15, "text": "一个" }
+    ],
+    "edge": [
+      { "start": 0, "end": 0.4, "text": "before" },
+      { "start": 9.8, "end": 10.3, "text": "straddles" },
+      { "start": 10.1, "end": 10.4, "text": "Hello" },
+      { "start": 10.35, "end": 10.6, "text": "overlapping" },
+      { "start": 10.5, "end": 10.5, "text": "zero" },
+      {
+        "start": 10.7,
+        "end": 11.2,
+        "text": "supercalifragilisticexpialidocious"
+      },
+      { "start": 11.3, "end": 11.5, "text": "again." },
+      { "start": 11.4, "end": 11.45, "text": "out-of-order" },
+      { "start": 11.6, "end": 11.9, "text": "Done?" },
+      { "start": 13, "end": 13.2, "text": "after" },
+      { "start": 13.25, "end": 13.5, "text": "a" },
+      { "start": 13.55, "end": 13.8, "text": "pause" },
+      { "start": 13.85, "end": 14.1, "text": "that" },
+      { "start": 14.15, "end": 14.4, "text": "keeps" },
+      { "start": 14.45, "end": 14.7, "text": "going" },
+      { "start": 14.75, "end": 15, "text": "and" },
+      { "start": 15.05, "end": 15.3, "text": "going" },
+      { "start": 15.35, "end": 15.6, "text": "until" },
+      { "start": 15.65, "end": 15.9, "text": "the" },
+      { "start": 15.95, "end": 16.2, "text": "lines" },
+      { "start": 16.25, "end": 16.5, "text": "fill" },
+      { "start": 19.97, "end": 20.02, "text": "edge" },
+      { "start": 25.2, "end": 25.5, "text": "after" }
+    ]
+  },
+  "cases": [
+    {
+      "words": "whisper",
+      "range": { "startSeconds": 0, "endSeconds": 15 },
+      "cues": [
+        {
+          "start": 0,
+          "end": 1.78,
+          "lines": ["the target maximum", "number of items"]
+        },
+        {
+          "start": 1.78,
+          "end": 3.56,
+          "lines": ["before evicting", "the least recently"]
+        },
+        { "start": 3.56, "end": 4.74, "lines": ["used items."] },
+        {
+          "start": 4.76,
+          "end": 7.08,
+          "lines": ["By default max age", "will be infinity,"]
+        },
+        {
+          "start": 7.08,
+          "end": 8.56,
+          "lines": ["which means that", "items will never"]
+        },
+        { "start": 8.56, "end": 9.58, "lines": ["expire."] },
+        {
+          "start": 9.6,
+          "end": 11.14,
+          "lines": ["Individual", "expiration of an"]
+        },
+        {
+          "start": 11.14,
+          "end": 12.8,
+          "lines": ["item can be", "specified by the"]
+        },
+        { "start": 12.8, "end": 13.44, "lines": ["set."] },
+        { "start": 13.44, "end": 14, "lines": ["Key."] },
+        { "start": 14, "end": 14.7, "lines": ["Value."] },
+        { "start": 14.7, "end": 15, "lines": ["Options."] }
+      ]
+    },
+    {
+      "words": "whisper",
+      "range": { "startSeconds": 3.3, "endSeconds": 47.9 },
+      "cues": [
+        { "start": 0, "end": 1.44, "lines": ["recently used", "items."] },
+        {
+          "start": 1.46,
+          "end": 3.7800000000000002,
+          "lines": ["By default max age", "will be infinity,"]
+        },
+        {
+          "start": 3.7800000000000002,
+          "end": 5.260000000000001,
+          "lines": ["which means that", "items will never"]
+        },
+        { "start": 5.260000000000001, "end": 6.28, "lines": ["expire."] },
+        {
+          "start": 6.3,
+          "end": 7.840000000000001,
+          "lines": ["Individual", "expiration of an"]
+        },
+        {
+          "start": 7.840000000000001,
+          "end": 9.5,
+          "lines": ["item can be", "specified by the"]
+        },
+        { "start": 9.5, "end": 10.14, "lines": ["set."] },
+        { "start": 10.14, "end": 10.7, "lines": ["Key."] },
+        { "start": 10.7, "end": 11.399999999999999, "lines": ["Value."] },
+        { "start": 11.399999999999999, "end": 12.1, "lines": ["Options."] },
+        {
+          "start": 12.219999999999999,
+          "end": 12.840000000000002,
+          "lines": ["Method."]
+        },
+        {
+          "start": 12.86,
+          "end": 14.32,
+          "lines": ["Called right", "before an item is"]
+        },
+        {
+          "start": 14.32,
+          "end": 15.719999999999999,
+          "lines": ["evicted from the", "cache due to"]
+        },
+        {
+          "start": 15.719999999999999,
+          "end": 18.56,
+          "lines": ["capacity pressure", "or TTL expiration."]
+        },
+        {
+          "start": 18.64,
+          "end": 20.18,
+          "lines": ["Useful for side", "-defects or for"]
+        },
+        {
+          "start": 20.18,
+          "end": 22.12,
+          "lines": ["items like object", "URLs that need"]
+        },
+        {
+          "start": 22.12,
+          "end": 24.66,
+          "lines": ["explicit cleanup,", "revoke object URL."]
+        },
+        {
+          "start": 24.66,
+          "end": 26.7,
+          "lines": ["This callback is", "not called for"]
+        },
+        {
+          "start": 26.7,
+          "end": 28.8,
+          "lines": ["manual removals", "via delete or"]
+        },
+        {
+          "start": 28.8,
+          "end": 30.999999999999996,
+          "lines": ["clear the instance", "is iterable so you"]
+        },
+        {
+          "start": 30.999999999999996,
+          "end": 32.64,
+          "lines": ["can use it", "directly in a for"]
+        },
+        {
+          "start": 32.64,
+          "end": 35.18,
+          "lines": ["of loop individual", "expiration of an"]
+        },
+        {
+          "start": 35.18,
+          "end": 36.78,
+          "lines": ["item can be", "specified with the"]
+        },
+        {
+          "start": 36.78,
+          "end": 39.620000000000005,
+          "lines": ["max age option if", "not specified the"]
+        },
+        {
+          "start": 39.620000000000005,
+          "end": 41.580000000000005,
+          "lines": ["global max age", "value will be used"]
+        },
+        {
+          "start": 41.580000000000005,
+          "end": 43.24,
+          "lines": ["in case it is", "specified on the"]
+        },
+        { "start": 43.24, "end": 44.6, "lines": ["constructor", "otherwise"] }
+      ]
+    },
+    {
+      "words": "whisper",
+      "range": { "startSeconds": 10, "endSeconds": 119 },
+      "cues": [
+        {
+          "start": 0,
+          "end": 1.7799999999999994,
+          "lines": ["expiration of an", "item can be"]
+        },
+        {
+          "start": 1.7799999999999994,
+          "end": 3.4399999999999995,
+          "lines": ["specified by the", "set."]
+        },
+        { "start": 3.4399999999999995, "end": 4, "lines": ["Key."] },
+        { "start": 4, "end": 4.699999999999999, "lines": ["Value."] },
+        { "start": 4.699999999999999, "end": 5.4, "lines": ["Options."] },
+        { "start": 5.52, "end": 6.140000000000001, "lines": ["Method."] },
+        {
+          "start": 6.16,
+          "end": 7.620000000000001,
+          "lines": ["Called right", "before an item is"]
+        },
+        {
+          "start": 7.620000000000001,
+          "end": 9.02,
+          "lines": ["evicted from the", "cache due to"]
+        },
+        {
+          "start": 9.02,
+          "end": 11.860000000000001,
+          "lines": ["capacity pressure", "or TTL expiration."]
+        },
+        {
+          "start": 11.940000000000001,
+          "end": 13.48,
+          "lines": ["Useful for side", "-defects or for"]
+        },
+        {
+          "start": 13.48,
+          "end": 15.420000000000002,
+          "lines": ["items like object", "URLs that need"]
+        },
+        {
+          "start": 15.420000000000002,
+          "end": 17.96,
+          "lines": ["explicit cleanup,", "revoke object URL."]
+        },
+        {
+          "start": 17.96,
+          "end": 20,
+          "lines": ["This callback is", "not called for"]
+        },
+        {
+          "start": 20,
+          "end": 22.1,
+          "lines": ["manual removals", "via delete or"]
+        },
+        {
+          "start": 22.1,
+          "end": 24.299999999999997,
+          "lines": ["clear the instance", "is iterable so you"]
+        },
+        {
+          "start": 24.299999999999997,
+          "end": 25.939999999999998,
+          "lines": ["can use it", "directly in a for"]
+        },
+        {
+          "start": 25.939999999999998,
+          "end": 28.479999999999997,
+          "lines": ["of loop individual", "expiration of an"]
+        },
+        {
+          "start": 28.479999999999997,
+          "end": 30.08,
+          "lines": ["item can be", "specified with the"]
+        },
+        {
+          "start": 30.08,
+          "end": 32.92,
+          "lines": ["max age option if", "not specified the"]
+        },
+        {
+          "start": 32.92,
+          "end": 34.88,
+          "lines": ["global max age", "value will be used"]
+        },
+        {
+          "start": 34.88,
+          "end": 36.54,
+          "lines": ["in case it is", "specified on the"]
+        },
+        {
+          "start": 36.54,
+          "end": 38.48,
+          "lines": ["constructor", "otherwise the item"]
+        },
+        {
+          "start": 38.48,
+          "end": 40.52,
+          "lines": ["will never expire", "get the remaining"]
+        },
+        {
+          "start": 40.52,
+          "end": 42.26,
+          "lines": ["time to live in", "milliseconds for"]
+        },
+        {
+          "start": 42.26,
+          "end": 44.3,
+          "lines": ["the given item or", "undefined if the"]
+        },
+        {
+          "start": 44.3,
+          "end": 45.9,
+          "lines": ["item is not in the", "cache."]
+        },
+        {
+          "start": 45.94,
+          "end": 47.38,
+          "lines": ["Returns true if", "the item is"]
+        },
+        {
+          "start": 47.38,
+          "end": 48.9,
+          "lines": ["removed or false", "if the item"]
+        },
+        { "start": 48.9, "end": 50.06, "lines": ["doesn't exist."] },
+        { "start": 50.06, "end": 51.58, "lines": ["Update the max", "size."] },
+        {
+          "start": 51.58,
+          "end": 53.64,
+          "lines": ["Discarding items", "as necessary."]
+        },
+        {
+          "start": 53.86,
+          "end": 55.86,
+          "lines": ["Insertion order is", "mostly preserved,"]
+        },
+        {
+          "start": 55.86,
+          "end": 57.019999999999996,
+          "lines": ["though this is not", "a strong"]
+        },
+        {
+          "start": 57.019999999999996,
+          "end": 57.940000000000005,
+          "lines": ["guarantee."]
+        },
+        {
+          "start": 58,
+          "end": 59.379999999999995,
+          "lines": ["This library", "implements a"]
+        },
+        {
+          "start": 59.379999999999995,
+          "end": 60.900000000000006,
+          "lines": ["variant of the", "hashlru algorithm"]
+        },
+        {
+          "start": 60.900000000000006,
+          "end": 62.82,
+          "lines": ["using two map", "objects."]
+        },
+        {
+          "start": 62.86,
+          "end": 64.68,
+          "lines": ["One map holds", "recently added or"]
+        },
+        {
+          "start": 64.68,
+          "end": 66.48,
+          "lines": ["accessed entries,", "while the other"]
+        },
+        { "start": 66.48, "end": 68.04, "lines": ["holds older", "entries."] },
+        {
+          "start": 68.04,
+          "end": 69.68,
+          "lines": ["When the recent", "map reaches max"]
+        },
+        {
+          "start": 69.68,
+          "end": 72.14,
+          "lines": ["size, it replaces", "the older map and"]
+        },
+        {
+          "start": 72.14,
+          "end": 73.98,
+          "lines": ["a new recent map", "is created."]
+        },
+        {
+          "start": 74,
+          "end": 75.42,
+          "lines": ["This avoids the", "frequent delete"]
+        },
+        {
+          "start": 75.42,
+          "end": 77.16,
+          "lines": ["operations", "required by a"]
+        },
+        {
+          "start": 77.16,
+          "end": 78.92,
+          "lines": ["traditional linked", "list LRU and"]
+        },
+        {
+          "start": 78.92,
+          "end": 80.48,
+          "lines": ["supports keys of", "any type and"]
+        },
+        {
+          "start": 80.48,
+          "end": 81.88000000000001,
+          "lines": ["undefined values."]
+        },
+        {
+          "start": 81.96,
+          "end": 83.5,
+          "lines": ["The tradeoff is", "that the two maps"]
+        },
+        {
+          "start": 83.5,
+          "end": 85.28,
+          "lines": ["may physically", "retain up to twice"]
+        },
+        {
+          "start": 85.28,
+          "end": 86.78,
+          "lines": ["the target map", "size between"]
+        },
+        { "start": 86.78, "end": 87.86, "lines": ["rotations."] },
+        {
+          "start": 87.92,
+          "end": 89.56,
+          "lines": ["Use a strict size", "cache when that"]
+        },
+        {
+          "start": 89.56,
+          "end": 91.22,
+          "lines": ["temporary memory", "overhead is"]
+        },
+        {
+          "start": 91.22,
+          "end": 92.16000000000001,
+          "lines": ["unacceptable."]
+        },
+        {
+          "start": 92.28,
+          "end": 94.36,
+          "lines": ["Resolves a CSS", "color string into"]
+        },
+        {
+          "start": 94.36,
+          "end": 96.64,
+          "lines": ["its computed or", "specified value."]
+        },
+        {
+          "start": 96.64,
+          "end": 98.66,
+          "lines": ["System colors are", "not supported."]
+        },
+        {
+          "start": 98.66,
+          "end": 100.1,
+          "lines": ["The following", "resources have"]
+        },
+        {
+          "start": 100.1,
+          "end": 101.5,
+          "lines": ["been of great help", "in the development"]
+        },
+        {
+          "start": 101.5,
+          "end": 103.52,
+          "lines": ["of this library,", "checks if an"]
+        },
+        {
+          "start": 103.52,
+          "end": 105.6,
+          "lines": ["element matches a", "CSS selector and"]
+        },
+        {
+          "start": 105.6,
+          "end": 107.32,
+          "lines": ["returns additional", "abstract syntax"]
+        },
+        { "start": 107.32, "end": 109, "lines": ["tree, AST", "information,"] }
+      ]
+    },
+    {
+      "words": "whisper",
+      "range": { "startSeconds": 0.05, "endSeconds": 1.05 },
+      "cues": [
+        { "start": 0, "end": 1, "lines": ["the target maximum", "number"] }
+      ]
+    },
+    {
+      "words": "whisper",
+      "range": { "startSeconds": 57.31, "endSeconds": 117.31 },
+      "cues": [
+        {
+          "start": 0.07000000000000028,
+          "end": 1.5899999999999963,
+          "lines": ["removed or false", "if the item"]
+        },
+        {
+          "start": 1.5899999999999963,
+          "end": 2.75,
+          "lines": ["doesn't exist."]
+        },
+        {
+          "start": 2.75,
+          "end": 4.269999999999996,
+          "lines": ["Update the max", "size."]
+        },
+        {
+          "start": 4.269999999999996,
+          "end": 6.33,
+          "lines": ["Discarding items", "as necessary."]
+        },
+        {
+          "start": 6.549999999999997,
+          "end": 8.549999999999997,
+          "lines": ["Insertion order is", "mostly preserved,"]
+        },
+        {
+          "start": 8.549999999999997,
+          "end": 9.709999999999994,
+          "lines": ["though this is not", "a strong"]
+        },
+        {
+          "start": 9.709999999999994,
+          "end": 10.630000000000004,
+          "lines": ["guarantee."]
+        },
+        {
+          "start": 10.689999999999998,
+          "end": 12.069999999999993,
+          "lines": ["This library", "implements a"]
+        },
+        {
+          "start": 12.069999999999993,
+          "end": 13.590000000000003,
+          "lines": ["variant of the", "hashlru algorithm"]
+        },
+        {
+          "start": 13.590000000000003,
+          "end": 15.51,
+          "lines": ["using two map", "objects."]
+        },
+        {
+          "start": 15.549999999999997,
+          "end": 17.370000000000005,
+          "lines": ["One map holds", "recently added or"]
+        },
+        {
+          "start": 17.370000000000005,
+          "end": 19.17,
+          "lines": ["accessed entries,", "while the other"]
+        },
+        {
+          "start": 19.17,
+          "end": 20.730000000000004,
+          "lines": ["holds older", "entries."]
+        },
+        {
+          "start": 20.730000000000004,
+          "end": 22.370000000000005,
+          "lines": ["When the recent", "map reaches max"]
+        },
+        {
+          "start": 22.370000000000005,
+          "end": 24.83,
+          "lines": ["size, it replaces", "the older map and"]
+        },
+        {
+          "start": 24.83,
+          "end": 26.669999999999995,
+          "lines": ["a new recent map", "is created."]
+        },
+        {
+          "start": 26.689999999999998,
+          "end": 28.11,
+          "lines": ["This avoids the", "frequent delete"]
+        },
+        {
+          "start": 28.11,
+          "end": 29.849999999999994,
+          "lines": ["operations", "required by a"]
+        },
+        {
+          "start": 29.849999999999994,
+          "end": 31.61,
+          "lines": ["traditional linked", "list LRU and"]
+        },
+        {
+          "start": 31.61,
+          "end": 33.17,
+          "lines": ["supports keys of", "any type and"]
+        },
+        { "start": 33.17, "end": 34.57, "lines": ["undefined values."] },
+        {
+          "start": 34.64999999999999,
+          "end": 36.19,
+          "lines": ["The tradeoff is", "that the two maps"]
+        },
+        {
+          "start": 36.19,
+          "end": 37.97,
+          "lines": ["may physically", "retain up to twice"]
+        },
+        {
+          "start": 37.97,
+          "end": 39.47,
+          "lines": ["the target map", "size between"]
+        },
+        { "start": 39.47, "end": 40.54999999999999, "lines": ["rotations."] },
+        {
+          "start": 40.61,
+          "end": 42.25,
+          "lines": ["Use a strict size", "cache when that"]
+        },
+        {
+          "start": 42.25,
+          "end": 43.91,
+          "lines": ["temporary memory", "overhead is"]
+        },
+        { "start": 43.91, "end": 44.85, "lines": ["unacceptable."] },
+        {
+          "start": 44.97,
+          "end": 47.05,
+          "lines": ["Resolves a CSS", "color string into"]
+        },
+        {
+          "start": 47.05,
+          "end": 49.33,
+          "lines": ["its computed or", "specified value."]
+        },
+        {
+          "start": 49.33,
+          "end": 51.349999999999994,
+          "lines": ["System colors are", "not supported."]
+        },
+        {
+          "start": 51.349999999999994,
+          "end": 52.78999999999999,
+          "lines": ["The following", "resources have"]
+        },
+        {
+          "start": 52.78999999999999,
+          "end": 54.19,
+          "lines": ["been of great help", "in the development"]
+        },
+        {
+          "start": 54.19,
+          "end": 56.209999999999994,
+          "lines": ["of this library,", "checks if an"]
+        },
+        {
+          "start": 56.209999999999994,
+          "end": 58.28999999999999,
+          "lines": ["element matches a", "CSS selector and"]
+        },
+        {
+          "start": 58.28999999999999,
+          "end": 60,
+          "lines": ["returns additional", "abstract syntax"]
+        }
+      ]
+    },
+    {
+      "words": "whisper",
+      "range": { "startSeconds": 100.5, "endSeconds": 101.6 },
+      "cues": [
+        {
+          "start": 0,
+          "end": 1.0999999999999943,
+          "lines": ["overhead is", "unacceptable."]
+        }
+      ]
+    },
+    {
+      "words": "whisper",
+      "range": { "startSeconds": 90, "endSeconds": 250 },
+      "cues": [
+        {
+          "start": 0,
+          "end": 1.880000000000004,
+          "lines": ["type and undefined", "values."]
+        },
+        {
+          "start": 1.9599999999999937,
+          "end": 3.5,
+          "lines": ["The tradeoff is", "that the two maps"]
+        },
+        {
+          "start": 3.5,
+          "end": 5.280000000000001,
+          "lines": ["may physically", "retain up to twice"]
+        },
+        {
+          "start": 5.280000000000001,
+          "end": 6.780000000000001,
+          "lines": ["the target map", "size between"]
+        },
+        {
+          "start": 6.780000000000001,
+          "end": 7.859999999999994,
+          "lines": ["rotations."]
+        },
+        {
+          "start": 7.920000000000002,
+          "end": 9.560000000000002,
+          "lines": ["Use a strict size", "cache when that"]
+        },
+        {
+          "start": 9.560000000000002,
+          "end": 11.219999999999999,
+          "lines": ["temporary memory", "overhead is"]
+        },
+        {
+          "start": 11.219999999999999,
+          "end": 12.160000000000005,
+          "lines": ["unacceptable."]
+        },
+        {
+          "start": 12.280000000000001,
+          "end": 14.36,
+          "lines": ["Resolves a CSS", "color string into"]
+        },
+        {
+          "start": 14.36,
+          "end": 16.64,
+          "lines": ["its computed or", "specified value."]
+        },
+        {
+          "start": 16.64,
+          "end": 18.659999999999997,
+          "lines": ["System colors are", "not supported."]
+        },
+        {
+          "start": 18.659999999999997,
+          "end": 20.099999999999994,
+          "lines": ["The following", "resources have"]
+        },
+        {
+          "start": 20.099999999999994,
+          "end": 21.5,
+          "lines": ["been of great help", "in the development"]
+        },
+        {
+          "start": 21.5,
+          "end": 23.519999999999996,
+          "lines": ["of this library,", "checks if an"]
+        },
+        {
+          "start": 23.519999999999996,
+          "end": 25.599999999999994,
+          "lines": ["element matches a", "CSS selector and"]
+        },
+        {
+          "start": 25.599999999999994,
+          "end": 27.319999999999993,
+          "lines": ["returns additional", "abstract syntax"]
+        },
+        {
+          "start": 27.319999999999993,
+          "end": 29.520000000000003,
+          "lines": ["tree, AST", "information,"]
+        },
+        {
+          "start": 29.700000000000003,
+          "end": 30.499999999999993,
+          "lines": ["parses"]
+        }
+      ]
+    },
+    {
+      "words": "whisper",
+      "range": { "startSeconds": 3.63, "endSeconds": 111.5 },
+      "cues": [
+        { "start": 0, "end": 1.1099999999999999, "lines": ["used items."] },
+        {
+          "start": 1.13,
+          "end": 3.45,
+          "lines": ["By default max age", "will be infinity,"]
+        },
+        {
+          "start": 3.45,
+          "end": 4.930000000000001,
+          "lines": ["which means that", "items will never"]
+        },
+        { "start": 4.930000000000001, "end": 5.95, "lines": ["expire."] },
+        {
+          "start": 5.97,
+          "end": 7.510000000000001,
+          "lines": ["Individual", "expiration of an"]
+        },
+        {
+          "start": 7.510000000000001,
+          "end": 9.170000000000002,
+          "lines": ["item can be", "specified by the"]
+        },
+        {
+          "start": 9.170000000000002,
+          "end": 9.809999999999999,
+          "lines": ["set."]
+        },
+        {
+          "start": 9.809999999999999,
+          "end": 10.370000000000001,
+          "lines": ["Key."]
+        },
+        { "start": 10.370000000000001, "end": 11.07, "lines": ["Value."] },
+        { "start": 11.07, "end": 11.770000000000001, "lines": ["Options."] },
+        { "start": 11.89, "end": 12.51, "lines": ["Method."] },
+        {
+          "start": 12.530000000000001,
+          "end": 13.990000000000002,
+          "lines": ["Called right", "before an item is"]
+        },
+        {
+          "start": 13.990000000000002,
+          "end": 15.39,
+          "lines": ["evicted from the", "cache due to"]
+        },
+        {
+          "start": 15.39,
+          "end": 18.23,
+          "lines": ["capacity pressure", "or TTL expiration."]
+        },
+        {
+          "start": 18.310000000000002,
+          "end": 19.85,
+          "lines": ["Useful for side", "-defects or for"]
+        },
+        {
+          "start": 19.85,
+          "end": 21.790000000000003,
+          "lines": ["items like object", "URLs that need"]
+        },
+        {
+          "start": 21.790000000000003,
+          "end": 24.330000000000002,
+          "lines": ["explicit cleanup,", "revoke object URL."]
+        },
+        {
+          "start": 24.330000000000002,
+          "end": 26.37,
+          "lines": ["This callback is", "not called for"]
+        },
+        {
+          "start": 26.37,
+          "end": 28.470000000000002,
+          "lines": ["manual removals", "via delete or"]
+        },
+        {
+          "start": 28.470000000000002,
+          "end": 30.669999999999998,
+          "lines": ["clear the instance", "is iterable so you"]
+        },
+        {
+          "start": 30.669999999999998,
+          "end": 32.309999999999995,
+          "lines": ["can use it", "directly in a for"]
+        },
+        {
+          "start": 32.309999999999995,
+          "end": 34.849999999999994,
+          "lines": ["of loop individual", "expiration of an"]
+        },
+        {
+          "start": 34.849999999999994,
+          "end": 36.449999999999996,
+          "lines": ["item can be", "specified with the"]
+        },
+        {
+          "start": 36.449999999999996,
+          "end": 39.29,
+          "lines": ["max age option if", "not specified the"]
+        },
+        {
+          "start": 39.29,
+          "end": 41.25,
+          "lines": ["global max age", "value will be used"]
+        },
+        {
+          "start": 41.25,
+          "end": 42.91,
+          "lines": ["in case it is", "specified on the"]
+        },
+        {
+          "start": 42.91,
+          "end": 44.849999999999994,
+          "lines": ["constructor", "otherwise the item"]
+        },
+        {
+          "start": 44.849999999999994,
+          "end": 46.89,
+          "lines": ["will never expire", "get the remaining"]
+        },
+        {
+          "start": 46.89,
+          "end": 48.629999999999995,
+          "lines": ["time to live in", "milliseconds for"]
+        },
+        {
+          "start": 48.629999999999995,
+          "end": 50.669999999999995,
+          "lines": ["the given item or", "undefined if the"]
+        },
+        {
+          "start": 50.669999999999995,
+          "end": 52.269999999999996,
+          "lines": ["item is not in the", "cache."]
+        },
+        {
+          "start": 52.309999999999995,
+          "end": 53.75,
+          "lines": ["Returns true if", "the item is"]
+        },
+        {
+          "start": 53.75,
+          "end": 55.269999999999996,
+          "lines": ["removed or false", "if the item"]
+        },
+        {
+          "start": 55.269999999999996,
+          "end": 56.43,
+          "lines": ["doesn't exist."]
+        },
+        {
+          "start": 56.43,
+          "end": 57.949999999999996,
+          "lines": ["Update the max", "size."]
+        },
+        {
+          "start": 57.949999999999996,
+          "end": 60.01,
+          "lines": ["Discarding items", "as necessary."]
+        },
+        {
+          "start": 60.23,
+          "end": 62.23,
+          "lines": ["Insertion order is", "mostly preserved,"]
+        },
+        {
+          "start": 62.23,
+          "end": 63.38999999999999,
+          "lines": ["though this is not", "a strong"]
+        },
+        { "start": 63.38999999999999, "end": 64.31, "lines": ["guarantee."] },
+        {
+          "start": 64.37,
+          "end": 65.75,
+          "lines": ["This library", "implements a"]
+        },
+        {
+          "start": 65.75,
+          "end": 67.27000000000001,
+          "lines": ["variant of the", "hashlru algorithm"]
+        },
+        {
+          "start": 67.27000000000001,
+          "end": 69.19000000000001,
+          "lines": ["using two map", "objects."]
+        },
+        {
+          "start": 69.23,
+          "end": 71.05000000000001,
+          "lines": ["One map holds", "recently added or"]
+        },
+        {
+          "start": 71.05000000000001,
+          "end": 72.85000000000001,
+          "lines": ["accessed entries,", "while the other"]
+        },
+        {
+          "start": 72.85000000000001,
+          "end": 74.41000000000001,
+          "lines": ["holds older", "entries."]
+        },
+        {
+          "start": 74.41000000000001,
+          "end": 76.05000000000001,
+          "lines": ["When the recent", "map reaches max"]
+        },
+        {
+          "start": 76.05000000000001,
+          "end": 78.51,
+          "lines": ["size, it replaces", "the older map and"]
+        },
+        {
+          "start": 78.51,
+          "end": 80.35000000000001,
+          "lines": ["a new recent map", "is created."]
+        },
+        {
+          "start": 80.37,
+          "end": 81.79,
+          "lines": ["This avoids the", "frequent delete"]
+        },
+        {
+          "start": 81.79,
+          "end": 83.53,
+          "lines": ["operations", "required by a"]
+        },
+        {
+          "start": 83.53,
+          "end": 85.29,
+          "lines": ["traditional linked", "list LRU and"]
+        },
+        {
+          "start": 85.29,
+          "end": 86.85000000000001,
+          "lines": ["supports keys of", "any type and"]
+        },
+        {
+          "start": 86.85000000000001,
+          "end": 88.25000000000001,
+          "lines": ["undefined values."]
+        },
+        {
+          "start": 88.33,
+          "end": 89.87,
+          "lines": ["The tradeoff is", "that the two maps"]
+        },
+        {
+          "start": 89.87,
+          "end": 91.65,
+          "lines": ["may physically", "retain up to twice"]
+        },
+        {
+          "start": 91.65,
+          "end": 93.15,
+          "lines": ["the target map", "size between"]
+        },
+        { "start": 93.15, "end": 94.23, "lines": ["rotations."] },
+        {
+          "start": 94.29,
+          "end": 95.93,
+          "lines": ["Use a strict size", "cache when that"]
+        },
+        {
+          "start": 95.93,
+          "end": 97.59,
+          "lines": ["temporary memory", "overhead is"]
+        },
+        {
+          "start": 97.59,
+          "end": 98.53000000000002,
+          "lines": ["unacceptable."]
+        },
+        {
+          "start": 98.65,
+          "end": 100.73,
+          "lines": ["Resolves a CSS", "color string into"]
+        },
+        {
+          "start": 100.73,
+          "end": 103.01,
+          "lines": ["its computed or", "specified value."]
+        },
+        {
+          "start": 103.01,
+          "end": 105.03,
+          "lines": ["System colors are", "not supported."]
+        },
+        {
+          "start": 105.03,
+          "end": 106.47,
+          "lines": ["The following", "resources have"]
+        },
+        {
+          "start": 106.47,
+          "end": 107.87,
+          "lines": ["been of great help", "in the development"]
+        }
+      ]
+    },
+    {
+      "words": "whisper",
+      "range": { "startSeconds": 21.64, "endSeconds": 119.71 },
+      "cues": [
+        {
+          "start": 0.3000000000000007,
+          "end": 1.8399999999999999,
+          "lines": ["Useful for side", "-defects or for"]
+        },
+        {
+          "start": 1.8399999999999999,
+          "end": 3.780000000000001,
+          "lines": ["items like object", "URLs that need"]
+        },
+        {
+          "start": 3.780000000000001,
+          "end": 6.32,
+          "lines": ["explicit cleanup,", "revoke object URL."]
+        },
+        {
+          "start": 6.32,
+          "end": 8.36,
+          "lines": ["This callback is", "not called for"]
+        },
+        {
+          "start": 8.36,
+          "end": 10.46,
+          "lines": ["manual removals", "via delete or"]
+        },
+        {
+          "start": 10.46,
+          "end": 12.659999999999997,
+          "lines": ["clear the instance", "is iterable so you"]
+        },
+        {
+          "start": 12.659999999999997,
+          "end": 14.299999999999997,
+          "lines": ["can use it", "directly in a for"]
+        },
+        {
+          "start": 14.299999999999997,
+          "end": 16.839999999999996,
+          "lines": ["of loop individual", "expiration of an"]
+        },
+        {
+          "start": 16.839999999999996,
+          "end": 18.439999999999998,
+          "lines": ["item can be", "specified with the"]
+        },
+        {
+          "start": 18.439999999999998,
+          "end": 21.28,
+          "lines": ["max age option if", "not specified the"]
+        },
+        {
+          "start": 21.28,
+          "end": 23.240000000000002,
+          "lines": ["global max age", "value will be used"]
+        },
+        {
+          "start": 23.240000000000002,
+          "end": 24.9,
+          "lines": ["in case it is", "specified on the"]
+        },
+        {
+          "start": 24.9,
+          "end": 26.839999999999996,
+          "lines": ["constructor", "otherwise the item"]
+        },
+        {
+          "start": 26.839999999999996,
+          "end": 28.880000000000003,
+          "lines": ["will never expire", "get the remaining"]
+        },
+        {
+          "start": 28.880000000000003,
+          "end": 30.619999999999997,
+          "lines": ["time to live in", "milliseconds for"]
+        },
+        {
+          "start": 30.619999999999997,
+          "end": 32.66,
+          "lines": ["the given item or", "undefined if the"]
+        },
+        {
+          "start": 32.66,
+          "end": 34.26,
+          "lines": ["item is not in the", "cache."]
+        },
+        {
+          "start": 34.3,
+          "end": 35.74,
+          "lines": ["Returns true if", "the item is"]
+        },
+        {
+          "start": 35.74,
+          "end": 37.26,
+          "lines": ["removed or false", "if the item"]
+        },
+        { "start": 37.26, "end": 38.42, "lines": ["doesn't exist."] },
+        { "start": 38.42, "end": 39.94, "lines": ["Update the max", "size."] },
+        {
+          "start": 39.94,
+          "end": 42,
+          "lines": ["Discarding items", "as necessary."]
+        },
+        {
+          "start": 42.22,
+          "end": 44.22,
+          "lines": ["Insertion order is", "mostly preserved,"]
+        },
+        {
+          "start": 44.22,
+          "end": 45.379999999999995,
+          "lines": ["though this is not", "a strong"]
+        },
+        {
+          "start": 45.379999999999995,
+          "end": 46.300000000000004,
+          "lines": ["guarantee."]
+        },
+        {
+          "start": 46.36,
+          "end": 47.739999999999995,
+          "lines": ["This library", "implements a"]
+        },
+        {
+          "start": 47.739999999999995,
+          "end": 49.260000000000005,
+          "lines": ["variant of the", "hashlru algorithm"]
+        },
+        {
+          "start": 49.260000000000005,
+          "end": 51.18,
+          "lines": ["using two map", "objects."]
+        },
+        {
+          "start": 51.22,
+          "end": 53.040000000000006,
+          "lines": ["One map holds", "recently added or"]
+        },
+        {
+          "start": 53.040000000000006,
+          "end": 54.84,
+          "lines": ["accessed entries,", "while the other"]
+        },
+        {
+          "start": 54.84,
+          "end": 56.400000000000006,
+          "lines": ["holds older", "entries."]
+        },
+        {
+          "start": 56.400000000000006,
+          "end": 58.040000000000006,
+          "lines": ["When the recent", "map reaches max"]
+        },
+        {
+          "start": 58.040000000000006,
+          "end": 60.5,
+          "lines": ["size, it replaces", "the older map and"]
+        },
+        {
+          "start": 60.5,
+          "end": 62.339999999999996,
+          "lines": ["a new recent map", "is created."]
+        },
+        {
+          "start": 62.36,
+          "end": 63.78,
+          "lines": ["This avoids the", "frequent delete"]
+        },
+        {
+          "start": 63.78,
+          "end": 65.52,
+          "lines": ["operations", "required by a"]
+        },
+        {
+          "start": 65.52,
+          "end": 67.28,
+          "lines": ["traditional linked", "list LRU and"]
+        },
+        {
+          "start": 67.28,
+          "end": 68.84,
+          "lines": ["supports keys of", "any type and"]
+        },
+        {
+          "start": 68.84,
+          "end": 70.24000000000001,
+          "lines": ["undefined values."]
+        },
+        {
+          "start": 70.32,
+          "end": 71.86,
+          "lines": ["The tradeoff is", "that the two maps"]
+        },
+        {
+          "start": 71.86,
+          "end": 73.64,
+          "lines": ["may physically", "retain up to twice"]
+        },
+        {
+          "start": 73.64,
+          "end": 75.14,
+          "lines": ["the target map", "size between"]
+        },
+        { "start": 75.14, "end": 76.22, "lines": ["rotations."] },
+        {
+          "start": 76.28,
+          "end": 77.92,
+          "lines": ["Use a strict size", "cache when that"]
+        },
+        {
+          "start": 77.92,
+          "end": 79.58,
+          "lines": ["temporary memory", "overhead is"]
+        },
+        {
+          "start": 79.58,
+          "end": 80.52000000000001,
+          "lines": ["unacceptable."]
+        },
+        {
+          "start": 80.64,
+          "end": 82.72,
+          "lines": ["Resolves a CSS", "color string into"]
+        },
+        {
+          "start": 82.72,
+          "end": 85,
+          "lines": ["its computed or", "specified value."]
+        },
+        {
+          "start": 85,
+          "end": 87.02,
+          "lines": ["System colors are", "not supported."]
+        },
+        {
+          "start": 87.02,
+          "end": 88.46,
+          "lines": ["The following", "resources have"]
+        },
+        {
+          "start": 88.46,
+          "end": 89.86,
+          "lines": ["been of great help", "in the development"]
+        },
+        {
+          "start": 89.86,
+          "end": 91.88,
+          "lines": ["of this library,", "checks if an"]
+        },
+        {
+          "start": 91.88,
+          "end": 93.96,
+          "lines": ["element matches a", "CSS selector and"]
+        },
+        {
+          "start": 93.96,
+          "end": 95.67999999999999,
+          "lines": ["returns additional", "abstract syntax"]
+        },
+        {
+          "start": 95.67999999999999,
+          "end": 97.88000000000001,
+          "lines": ["tree, AST", "information,"]
+        }
+      ]
+    },
+    {
+      "words": "whisper",
+      "range": { "startSeconds": 0, "endSeconds": 121.32 },
+      "cues": [
+        {
+          "start": 0,
+          "end": 1.78,
+          "lines": ["the target maximum", "number of items"]
+        },
+        {
+          "start": 1.78,
+          "end": 3.56,
+          "lines": ["before evicting", "the least recently"]
+        },
+        { "start": 3.56, "end": 4.74, "lines": ["used items."] },
+        {
+          "start": 4.76,
+          "end": 7.08,
+          "lines": ["By default max age", "will be infinity,"]
+        },
+        {
+          "start": 7.08,
+          "end": 8.56,
+          "lines": ["which means that", "items will never"]
+        },
+        { "start": 8.56, "end": 9.58, "lines": ["expire."] },
+        {
+          "start": 9.6,
+          "end": 11.14,
+          "lines": ["Individual", "expiration of an"]
+        },
+        {
+          "start": 11.14,
+          "end": 12.8,
+          "lines": ["item can be", "specified by the"]
+        },
+        { "start": 12.8, "end": 13.44, "lines": ["set."] },
+        { "start": 13.44, "end": 14, "lines": ["Key."] },
+        { "start": 14, "end": 14.7, "lines": ["Value."] },
+        { "start": 14.7, "end": 15.4, "lines": ["Options."] },
+        { "start": 15.52, "end": 16.14, "lines": ["Method."] },
+        {
+          "start": 16.16,
+          "end": 17.62,
+          "lines": ["Called right", "before an item is"]
+        },
+        {
+          "start": 17.62,
+          "end": 19.02,
+          "lines": ["evicted from the", "cache due to"]
+        },
+        {
+          "start": 19.02,
+          "end": 21.86,
+          "lines": ["capacity pressure", "or TTL expiration."]
+        },
+        {
+          "start": 21.94,
+          "end": 23.48,
+          "lines": ["Useful for side", "-defects or for"]
+        },
+        {
+          "start": 23.48,
+          "end": 25.42,
+          "lines": ["items like object", "URLs that need"]
+        },
+        {
+          "start": 25.42,
+          "end": 27.96,
+          "lines": ["explicit cleanup,", "revoke object URL."]
+        },
+        {
+          "start": 27.96,
+          "end": 30,
+          "lines": ["This callback is", "not called for"]
+        },
+        {
+          "start": 30,
+          "end": 32.1,
+          "lines": ["manual removals", "via delete or"]
+        },
+        {
+          "start": 32.1,
+          "end": 34.3,
+          "lines": ["clear the instance", "is iterable so you"]
+        },
+        {
+          "start": 34.3,
+          "end": 35.94,
+          "lines": ["can use it", "directly in a for"]
+        },
+        {
+          "start": 35.94,
+          "end": 38.48,
+          "lines": ["of loop individual", "expiration of an"]
+        },
+        {
+          "start": 38.48,
+          "end": 40.08,
+          "lines": ["item can be", "specified with the"]
+        },
+        {
+          "start": 40.08,
+          "end": 42.92,
+          "lines": ["max age option if", "not specified the"]
+        },
+        {
+          "start": 42.92,
+          "end": 44.88,
+          "lines": ["global max age", "value will be used"]
+        },
+        {
+          "start": 44.88,
+          "end": 46.54,
+          "lines": ["in case it is", "specified on the"]
+        },
+        {
+          "start": 46.54,
+          "end": 48.48,
+          "lines": ["constructor", "otherwise the item"]
+        },
+        {
+          "start": 48.48,
+          "end": 50.52,
+          "lines": ["will never expire", "get the remaining"]
+        },
+        {
+          "start": 50.52,
+          "end": 52.26,
+          "lines": ["time to live in", "milliseconds for"]
+        },
+        {
+          "start": 52.26,
+          "end": 54.3,
+          "lines": ["the given item or", "undefined if the"]
+        },
+        {
+          "start": 54.3,
+          "end": 55.9,
+          "lines": ["item is not in the", "cache."]
+        },
+        {
+          "start": 55.94,
+          "end": 57.38,
+          "lines": ["Returns true if", "the item is"]
+        },
+        {
+          "start": 57.38,
+          "end": 58.9,
+          "lines": ["removed or false", "if the item"]
+        },
+        { "start": 58.9, "end": 60.06, "lines": ["doesn't exist."] },
+        { "start": 60.06, "end": 61.58, "lines": ["Update the max", "size."] },
+        {
+          "start": 61.58,
+          "end": 63.64,
+          "lines": ["Discarding items", "as necessary."]
+        },
+        {
+          "start": 63.86,
+          "end": 65.86,
+          "lines": ["Insertion order is", "mostly preserved,"]
+        },
+        {
+          "start": 65.86,
+          "end": 67.02,
+          "lines": ["though this is not", "a strong"]
+        },
+        { "start": 67.02, "end": 67.94000000000001, "lines": ["guarantee."] },
+        {
+          "start": 68,
+          "end": 69.38,
+          "lines": ["This library", "implements a"]
+        },
+        {
+          "start": 69.38,
+          "end": 70.9,
+          "lines": ["variant of the", "hashlru algorithm"]
+        },
+        {
+          "start": 70.9,
+          "end": 72.82000000000001,
+          "lines": ["using two map", "objects."]
+        },
+        {
+          "start": 72.86,
+          "end": 74.68,
+          "lines": ["One map holds", "recently added or"]
+        },
+        {
+          "start": 74.68,
+          "end": 76.48,
+          "lines": ["accessed entries,", "while the other"]
+        },
+        { "start": 76.48, "end": 78.04, "lines": ["holds older", "entries."] },
+        {
+          "start": 78.04,
+          "end": 79.68,
+          "lines": ["When the recent", "map reaches max"]
+        },
+        {
+          "start": 79.68,
+          "end": 82.14,
+          "lines": ["size, it replaces", "the older map and"]
+        },
+        {
+          "start": 82.14,
+          "end": 83.98,
+          "lines": ["a new recent map", "is created."]
+        },
+        {
+          "start": 84,
+          "end": 85.42,
+          "lines": ["This avoids the", "frequent delete"]
+        },
+        {
+          "start": 85.42,
+          "end": 87.16,
+          "lines": ["operations", "required by a"]
+        },
+        {
+          "start": 87.16,
+          "end": 88.92,
+          "lines": ["traditional linked", "list LRU and"]
+        },
+        {
+          "start": 88.92,
+          "end": 90.48,
+          "lines": ["supports keys of", "any type and"]
+        },
+        {
+          "start": 90.48,
+          "end": 91.88000000000001,
+          "lines": ["undefined values."]
+        },
+        {
+          "start": 91.96,
+          "end": 93.5,
+          "lines": ["The tradeoff is", "that the two maps"]
+        },
+        {
+          "start": 93.5,
+          "end": 95.28,
+          "lines": ["may physically", "retain up to twice"]
+        },
+        {
+          "start": 95.28,
+          "end": 96.78,
+          "lines": ["the target map", "size between"]
+        },
+        { "start": 96.78, "end": 97.86, "lines": ["rotations."] },
+        {
+          "start": 97.92,
+          "end": 99.56,
+          "lines": ["Use a strict size", "cache when that"]
+        },
+        {
+          "start": 99.56,
+          "end": 101.22,
+          "lines": ["temporary memory", "overhead is"]
+        },
+        {
+          "start": 101.22,
+          "end": 102.16000000000001,
+          "lines": ["unacceptable."]
+        },
+        {
+          "start": 102.28,
+          "end": 104.36,
+          "lines": ["Resolves a CSS", "color string into"]
+        },
+        {
+          "start": 104.36,
+          "end": 106.64,
+          "lines": ["its computed or", "specified value."]
+        },
+        {
+          "start": 106.64,
+          "end": 108.66,
+          "lines": ["System colors are", "not supported."]
+        },
+        {
+          "start": 108.66,
+          "end": 110.1,
+          "lines": ["The following", "resources have"]
+        },
+        {
+          "start": 110.1,
+          "end": 111.5,
+          "lines": ["been of great help", "in the development"]
+        },
+        {
+          "start": 111.5,
+          "end": 113.52,
+          "lines": ["of this library,", "checks if an"]
+        },
+        {
+          "start": 113.52,
+          "end": 115.6,
+          "lines": ["element matches a", "CSS selector and"]
+        },
+        {
+          "start": 115.6,
+          "end": 117.32,
+          "lines": ["returns additional", "abstract syntax"]
+        },
+        {
+          "start": 117.32,
+          "end": 119.52000000000001,
+          "lines": ["tree, AST", "information,"]
+        },
+        { "start": 119.7, "end": 120.5, "lines": ["parses"] }
+      ]
+    },
+    {
+      "words": "whisper",
+      "range": { "startSeconds": 0, "endSeconds": 156.71 },
+      "cues": [
+        {
+          "start": 0,
+          "end": 1.78,
+          "lines": ["the target maximum", "number of items"]
+        },
+        {
+          "start": 1.78,
+          "end": 3.56,
+          "lines": ["before evicting", "the least recently"]
+        },
+        { "start": 3.56, "end": 4.74, "lines": ["used items."] },
+        {
+          "start": 4.76,
+          "end": 7.08,
+          "lines": ["By default max age", "will be infinity,"]
+        },
+        {
+          "start": 7.08,
+          "end": 8.56,
+          "lines": ["which means that", "items will never"]
+        },
+        { "start": 8.56, "end": 9.58, "lines": ["expire."] },
+        {
+          "start": 9.6,
+          "end": 11.14,
+          "lines": ["Individual", "expiration of an"]
+        },
+        {
+          "start": 11.14,
+          "end": 12.8,
+          "lines": ["item can be", "specified by the"]
+        },
+        { "start": 12.8, "end": 13.44, "lines": ["set."] },
+        { "start": 13.44, "end": 14, "lines": ["Key."] },
+        { "start": 14, "end": 14.7, "lines": ["Value."] },
+        { "start": 14.7, "end": 15.4, "lines": ["Options."] },
+        { "start": 15.52, "end": 16.14, "lines": ["Method."] },
+        {
+          "start": 16.16,
+          "end": 17.62,
+          "lines": ["Called right", "before an item is"]
+        },
+        {
+          "start": 17.62,
+          "end": 19.02,
+          "lines": ["evicted from the", "cache due to"]
+        },
+        {
+          "start": 19.02,
+          "end": 21.86,
+          "lines": ["capacity pressure", "or TTL expiration."]
+        },
+        {
+          "start": 21.94,
+          "end": 23.48,
+          "lines": ["Useful for side", "-defects or for"]
+        },
+        {
+          "start": 23.48,
+          "end": 25.42,
+          "lines": ["items like object", "URLs that need"]
+        },
+        {
+          "start": 25.42,
+          "end": 27.96,
+          "lines": ["explicit cleanup,", "revoke object URL."]
+        },
+        {
+          "start": 27.96,
+          "end": 30,
+          "lines": ["This callback is", "not called for"]
+        },
+        {
+          "start": 30,
+          "end": 32.1,
+          "lines": ["manual removals", "via delete or"]
+        },
+        {
+          "start": 32.1,
+          "end": 34.3,
+          "lines": ["clear the instance", "is iterable so you"]
+        },
+        {
+          "start": 34.3,
+          "end": 35.94,
+          "lines": ["can use it", "directly in a for"]
+        },
+        {
+          "start": 35.94,
+          "end": 38.48,
+          "lines": ["of loop individual", "expiration of an"]
+        },
+        {
+          "start": 38.48,
+          "end": 40.08,
+          "lines": ["item can be", "specified with the"]
+        },
+        {
+          "start": 40.08,
+          "end": 42.92,
+          "lines": ["max age option if", "not specified the"]
+        },
+        {
+          "start": 42.92,
+          "end": 44.88,
+          "lines": ["global max age", "value will be used"]
+        },
+        {
+          "start": 44.88,
+          "end": 46.54,
+          "lines": ["in case it is", "specified on the"]
+        },
+        {
+          "start": 46.54,
+          "end": 48.48,
+          "lines": ["constructor", "otherwise the item"]
+        },
+        {
+          "start": 48.48,
+          "end": 50.52,
+          "lines": ["will never expire", "get the remaining"]
+        },
+        {
+          "start": 50.52,
+          "end": 52.26,
+          "lines": ["time to live in", "milliseconds for"]
+        },
+        {
+          "start": 52.26,
+          "end": 54.3,
+          "lines": ["the given item or", "undefined if the"]
+        },
+        {
+          "start": 54.3,
+          "end": 55.9,
+          "lines": ["item is not in the", "cache."]
+        },
+        {
+          "start": 55.94,
+          "end": 57.38,
+          "lines": ["Returns true if", "the item is"]
+        },
+        {
+          "start": 57.38,
+          "end": 58.9,
+          "lines": ["removed or false", "if the item"]
+        },
+        { "start": 58.9, "end": 60.06, "lines": ["doesn't exist."] },
+        { "start": 60.06, "end": 61.58, "lines": ["Update the max", "size."] },
+        {
+          "start": 61.58,
+          "end": 63.64,
+          "lines": ["Discarding items", "as necessary."]
+        },
+        {
+          "start": 63.86,
+          "end": 65.86,
+          "lines": ["Insertion order is", "mostly preserved,"]
+        },
+        {
+          "start": 65.86,
+          "end": 67.02,
+          "lines": ["though this is not", "a strong"]
+        },
+        { "start": 67.02, "end": 67.94000000000001, "lines": ["guarantee."] },
+        {
+          "start": 68,
+          "end": 69.38,
+          "lines": ["This library", "implements a"]
+        },
+        {
+          "start": 69.38,
+          "end": 70.9,
+          "lines": ["variant of the", "hashlru algorithm"]
+        },
+        {
+          "start": 70.9,
+          "end": 72.82000000000001,
+          "lines": ["using two map", "objects."]
+        },
+        {
+          "start": 72.86,
+          "end": 74.68,
+          "lines": ["One map holds", "recently added or"]
+        },
+        {
+          "start": 74.68,
+          "end": 76.48,
+          "lines": ["accessed entries,", "while the other"]
+        },
+        { "start": 76.48, "end": 78.04, "lines": ["holds older", "entries."] },
+        {
+          "start": 78.04,
+          "end": 79.68,
+          "lines": ["When the recent", "map reaches max"]
+        },
+        {
+          "start": 79.68,
+          "end": 82.14,
+          "lines": ["size, it replaces", "the older map and"]
+        },
+        {
+          "start": 82.14,
+          "end": 83.98,
+          "lines": ["a new recent map", "is created."]
+        },
+        {
+          "start": 84,
+          "end": 85.42,
+          "lines": ["This avoids the", "frequent delete"]
+        },
+        {
+          "start": 85.42,
+          "end": 87.16,
+          "lines": ["operations", "required by a"]
+        },
+        {
+          "start": 87.16,
+          "end": 88.92,
+          "lines": ["traditional linked", "list LRU and"]
+        },
+        {
+          "start": 88.92,
+          "end": 90.48,
+          "lines": ["supports keys of", "any type and"]
+        },
+        {
+          "start": 90.48,
+          "end": 91.88000000000001,
+          "lines": ["undefined values."]
+        },
+        {
+          "start": 91.96,
+          "end": 93.5,
+          "lines": ["The tradeoff is", "that the two maps"]
+        },
+        {
+          "start": 93.5,
+          "end": 95.28,
+          "lines": ["may physically", "retain up to twice"]
+        },
+        {
+          "start": 95.28,
+          "end": 96.78,
+          "lines": ["the target map", "size between"]
+        },
+        { "start": 96.78, "end": 97.86, "lines": ["rotations."] },
+        {
+          "start": 97.92,
+          "end": 99.56,
+          "lines": ["Use a strict size", "cache when that"]
+        },
+        {
+          "start": 99.56,
+          "end": 101.22,
+          "lines": ["temporary memory", "overhead is"]
+        },
+        {
+          "start": 101.22,
+          "end": 102.16000000000001,
+          "lines": ["unacceptable."]
+        },
+        {
+          "start": 102.28,
+          "end": 104.36,
+          "lines": ["Resolves a CSS", "color string into"]
+        },
+        {
+          "start": 104.36,
+          "end": 106.64,
+          "lines": ["its computed or", "specified value."]
+        },
+        {
+          "start": 106.64,
+          "end": 108.66,
+          "lines": ["System colors are", "not supported."]
+        },
+        {
+          "start": 108.66,
+          "end": 110.1,
+          "lines": ["The following", "resources have"]
+        },
+        {
+          "start": 110.1,
+          "end": 111.5,
+          "lines": ["been of great help", "in the development"]
+        },
+        {
+          "start": 111.5,
+          "end": 113.52,
+          "lines": ["of this library,", "checks if an"]
+        },
+        {
+          "start": 113.52,
+          "end": 115.6,
+          "lines": ["element matches a", "CSS selector and"]
+        },
+        {
+          "start": 115.6,
+          "end": 117.32,
+          "lines": ["returns additional", "abstract syntax"]
+        },
+        {
+          "start": 117.32,
+          "end": 119.52000000000001,
+          "lines": ["tree, AST", "information,"]
+        },
+        { "start": 119.7, "end": 120.5, "lines": ["parses"] }
+      ]
+    },
+    {
+      "words": "whisper",
+      "range": { "startSeconds": 105.38, "endSeconds": 119.72 },
+      "cues": [
+        {
+          "start": 0,
+          "end": 1.2600000000000051,
+          "lines": ["specified value."]
+        },
+        {
+          "start": 1.2600000000000051,
+          "end": 3.280000000000001,
+          "lines": ["System colors are", "not supported."]
+        },
+        {
+          "start": 3.280000000000001,
+          "end": 4.719999999999999,
+          "lines": ["The following", "resources have"]
+        },
+        {
+          "start": 4.719999999999999,
+          "end": 6.1200000000000045,
+          "lines": ["been of great help", "in the development"]
+        },
+        {
+          "start": 6.1200000000000045,
+          "end": 8.14,
+          "lines": ["of this library,", "checks if an"]
+        },
+        {
+          "start": 8.14,
+          "end": 10.219999999999999,
+          "lines": ["element matches a", "CSS selector and"]
+        },
+        {
+          "start": 10.219999999999999,
+          "end": 11.939999999999998,
+          "lines": ["returns additional", "abstract syntax"]
+        },
+        {
+          "start": 11.939999999999998,
+          "end": 14.14000000000001,
+          "lines": ["tree, AST", "information,"]
+        }
+      ]
+    },
+    {
+      "words": "whisper",
+      "range": { "startSeconds": 15.75, "endSeconds": 54.27 },
+      "cues": [
+        {
+          "start": 0.41000000000000014,
+          "end": 1.870000000000001,
+          "lines": ["Called right", "before an item is"]
+        },
+        {
+          "start": 1.870000000000001,
+          "end": 3.2699999999999996,
+          "lines": ["evicted from the", "cache due to"]
+        },
+        {
+          "start": 3.2699999999999996,
+          "end": 6.110000000000001,
+          "lines": ["capacity pressure", "or TTL expiration."]
+        },
+        {
+          "start": 6.190000000000001,
+          "end": 7.73,
+          "lines": ["Useful for side", "-defects or for"]
+        },
+        {
+          "start": 7.73,
+          "end": 9.670000000000002,
+          "lines": ["items like object", "URLs that need"]
+        },
+        {
+          "start": 9.670000000000002,
+          "end": 12.21,
+          "lines": ["explicit cleanup,", "revoke object URL."]
+        },
+        {
+          "start": 12.21,
+          "end": 14.25,
+          "lines": ["This callback is", "not called for"]
+        },
+        {
+          "start": 14.25,
+          "end": 16.35,
+          "lines": ["manual removals", "via delete or"]
+        },
+        {
+          "start": 16.35,
+          "end": 18.549999999999997,
+          "lines": ["clear the instance", "is iterable so you"]
+        },
+        {
+          "start": 18.549999999999997,
+          "end": 20.189999999999998,
+          "lines": ["can use it", "directly in a for"]
+        },
+        {
+          "start": 20.189999999999998,
+          "end": 22.729999999999997,
+          "lines": ["of loop individual", "expiration of an"]
+        },
+        {
+          "start": 22.729999999999997,
+          "end": 24.33,
+          "lines": ["item can be", "specified with the"]
+        },
+        {
+          "start": 24.33,
+          "end": 27.17,
+          "lines": ["max age option if", "not specified the"]
+        },
+        {
+          "start": 27.17,
+          "end": 29.130000000000003,
+          "lines": ["global max age", "value will be used"]
+        },
+        {
+          "start": 29.130000000000003,
+          "end": 30.79,
+          "lines": ["in case it is", "specified on the"]
+        },
+        {
+          "start": 30.79,
+          "end": 32.73,
+          "lines": ["constructor", "otherwise the item"]
+        },
+        {
+          "start": 32.73,
+          "end": 34.77,
+          "lines": ["will never expire", "get the remaining"]
+        },
+        {
+          "start": 34.77,
+          "end": 36.51,
+          "lines": ["time to live in", "milliseconds for"]
+        },
+        {
+          "start": 36.51,
+          "end": 38.52,
+          "lines": ["the given item or", "undefined if the"]
+        }
+      ]
+    },
+    {
+      "words": "wide",
+      "range": { "startSeconds": 0, "endSeconds": 20 },
+      "cues": [
+        {
+          "start": 0,
+          "end": 2.4,
+          "lines": ["今天我们来谈一个", "改变工作习惯的"]
+        },
+        { "start": 2.4, "end": 2.7, "lines": ["方法。"] },
+        { "start": 2.7, "end": 3.3, "lines": ["ありがとう", "ございます。"] },
+        {
+          "start": 3.3,
+          "end": 5.7,
+          "lines": ["สวัสดีครับ OK 今天", "我们来谈一个改变"]
+        },
+        { "start": 5.7, "end": 6.9, "lines": ["工作习惯的方法。"] },
+        { "start": 6.9, "end": 7.5, "lines": ["ありがとう", "ございます。"] },
+        { "start": 7.5, "end": 9.65, "lines": ["สวัสดีครับ OK 今天", "我们来谈"] },
+        {
+          "start": 10.5,
+          "end": 12.3,
+          "lines": ["一个改变工作习惯的", "方法。"]
+        },
+        { "start": 12.3, "end": 12.9, "lines": ["ありがとう", "ございます。"] },
+        {
+          "start": 12.9,
+          "end": 15.3,
+          "lines": ["สวัสดีครับ OK 今天", "我们来谈一个改变"]
+        },
+        { "start": 15.3, "end": 16.5, "lines": ["工作习惯的方法。"] },
+        { "start": 16.5, "end": 17.1, "lines": ["ありがとう", "ございます。"] },
+        {
+          "start": 17.1,
+          "end": 19.549999999999997,
+          "lines": ["สวัสดีครับ OK 今天", "我们来谈一个"]
+        }
+      ]
+    },
+    {
+      "words": "wide",
+      "range": { "startSeconds": 4.1, "endSeconds": 9.7 },
+      "cues": [
+        {
+          "start": 0.10000000000000053,
+          "end": 2.5,
+          "lines": ["今天我们来谈一个", "改变工作习惯的"]
+        },
+        { "start": 2.5, "end": 2.8000000000000007, "lines": ["方法。"] },
+        {
+          "start": 2.8000000000000007,
+          "end": 3.4000000000000004,
+          "lines": ["ありがとう", "ございます。"]
+        },
+        {
+          "start": 3.4000000000000004,
+          "end": 5.550000000000001,
+          "lines": ["สวัสดีครับ OK 今天", "我们来谈"]
+        }
+      ]
+    },
+    {
+      "words": "wide",
+      "range": { "startSeconds": 0, "endSeconds": 178.7 },
+      "cues": [
+        {
+          "start": 0,
+          "end": 2.4,
+          "lines": ["今天我们来谈一个", "改变工作习惯的"]
+        },
+        { "start": 2.4, "end": 2.7, "lines": ["方法。"] },
+        { "start": 2.7, "end": 3.3, "lines": ["ありがとう", "ございます。"] },
+        {
+          "start": 3.3,
+          "end": 5.7,
+          "lines": ["สวัสดีครับ OK 今天", "我们来谈一个改变"]
+        },
+        { "start": 5.7, "end": 6.9, "lines": ["工作习惯的方法。"] },
+        { "start": 6.9, "end": 7.5, "lines": ["ありがとう", "ございます。"] },
+        { "start": 7.5, "end": 9.65, "lines": ["สวัสดีครับ OK 今天", "我们来谈"] },
+        {
+          "start": 10.5,
+          "end": 12.3,
+          "lines": ["一个改变工作习惯的", "方法。"]
+        },
+        { "start": 12.3, "end": 12.9, "lines": ["ありがとう", "ございます。"] },
+        {
+          "start": 12.9,
+          "end": 15.3,
+          "lines": ["สวัสดีครับ OK 今天", "我们来谈一个改变"]
+        },
+        { "start": 15.3, "end": 16.5, "lines": ["工作习惯的方法。"] },
+        { "start": 16.5, "end": 17.1, "lines": ["ありがとう", "ございます。"] },
+        {
+          "start": 17.1,
+          "end": 19.549999999999997,
+          "lines": ["สวัสดีครับ OK 今天", "我们来谈一个"]
+        }
+      ]
+    },
+    {
+      "words": "wide",
+      "range": { "startSeconds": 0, "endSeconds": 69.74 },
+      "cues": [
+        {
+          "start": 0,
+          "end": 2.4,
+          "lines": ["今天我们来谈一个", "改变工作习惯的"]
+        },
+        { "start": 2.4, "end": 2.7, "lines": ["方法。"] },
+        { "start": 2.7, "end": 3.3, "lines": ["ありがとう", "ございます。"] },
+        {
+          "start": 3.3,
+          "end": 5.7,
+          "lines": ["สวัสดีครับ OK 今天", "我们来谈一个改变"]
+        },
+        { "start": 5.7, "end": 6.9, "lines": ["工作习惯的方法。"] },
+        { "start": 6.9, "end": 7.5, "lines": ["ありがとう", "ございます。"] },
+        { "start": 7.5, "end": 9.65, "lines": ["สวัสดีครับ OK 今天", "我们来谈"] },
+        {
+          "start": 10.5,
+          "end": 12.3,
+          "lines": ["一个改变工作习惯的", "方法。"]
+        },
+        { "start": 12.3, "end": 12.9, "lines": ["ありがとう", "ございます。"] },
+        {
+          "start": 12.9,
+          "end": 15.3,
+          "lines": ["สวัสดีครับ OK 今天", "我们来谈一个改变"]
+        },
+        { "start": 15.3, "end": 16.5, "lines": ["工作习惯的方法。"] },
+        { "start": 16.5, "end": 17.1, "lines": ["ありがとう", "ございます。"] },
+        {
+          "start": 17.1,
+          "end": 19.549999999999997,
+          "lines": ["สวัสดีครับ OK 今天", "我们来谈一个"]
+        }
+      ]
+    },
+    {
+      "words": "wide",
+      "range": { "startSeconds": 4.12, "endSeconds": 18 },
+      "cues": [
+        {
+          "start": 0.08000000000000007,
+          "end": 2.4799999999999995,
+          "lines": ["今天我们来谈一个", "改变工作习惯的"]
+        },
+        {
+          "start": 2.4799999999999995,
+          "end": 2.7800000000000002,
+          "lines": ["方法。"]
+        },
+        {
+          "start": 2.7800000000000002,
+          "end": 3.38,
+          "lines": ["ありがとう", "ございます。"]
+        },
+        {
+          "start": 3.38,
+          "end": 5.53,
+          "lines": ["สวัสดีครับ OK 今天", "我们来谈"]
+        },
+        {
+          "start": 6.38,
+          "end": 8.18,
+          "lines": ["一个改变工作习惯的", "方法。"]
+        },
+        {
+          "start": 8.18,
+          "end": 8.780000000000001,
+          "lines": ["ありがとう", "ございます。"]
+        },
+        {
+          "start": 8.780000000000001,
+          "end": 11.18,
+          "lines": ["สวัสดีครับ OK 今天", "我们来谈一个改变"]
+        },
+        {
+          "start": 11.18,
+          "end": 12.379999999999999,
+          "lines": ["工作习惯的方法。"]
+        },
+        {
+          "start": 12.379999999999999,
+          "end": 12.98,
+          "lines": ["ありがとう", "ございます。"]
+        },
+        { "start": 12.98, "end": 13.879999999999999, "lines": ["สวัสดีครับ OK"] }
+      ]
+    },
+    {
+      "words": "edge",
+      "range": { "startSeconds": 10, "endSeconds": 25 },
+      "cues": [
+        {
+          "start": 0,
+          "end": 0.6999999999999993,
+          "lines": ["straddles Hello", "overlapping zero"]
+        },
+        {
+          "start": 0.6999999999999993,
+          "end": 1.4000000000000004,
+          "lines": ["supercalifragilisticexpialidocious", "again."]
+        },
+        {
+          "start": 1.4000000000000004,
+          "end": 2.3000000000000003,
+          "lines": ["out-of-order Done?"]
+        },
+        {
+          "start": 3,
+          "end": 5.050000000000001,
+          "lines": ["after a pause that", "keeps going and"]
+        },
+        {
+          "start": 5.050000000000001,
+          "end": 6.9,
+          "lines": ["going until the", "lines fill"]
+        },
+        { "start": 9.969999999999999, "end": 10.42, "lines": ["edge"] }
+      ]
+    },
+    {
+      "words": "edge",
+      "range": { "startSeconds": 10, "endSeconds": 20 },
+      "cues": [
+        {
+          "start": 0,
+          "end": 0.6999999999999993,
+          "lines": ["straddles Hello", "overlapping zero"]
+        },
+        {
+          "start": 0.6999999999999993,
+          "end": 1.4000000000000004,
+          "lines": ["supercalifragilisticexpialidocious", "again."]
+        },
+        {
+          "start": 1.4000000000000004,
+          "end": 2.3000000000000003,
+          "lines": ["out-of-order Done?"]
+        },
+        {
+          "start": 3,
+          "end": 5.050000000000001,
+          "lines": ["after a pause that", "keeps going and"]
+        },
+        {
+          "start": 5.050000000000001,
+          "end": 6.9,
+          "lines": ["going until the", "lines fill"]
+        }
+      ]
+    },
+    {
+      "words": "edge",
+      "range": { "startSeconds": 0, "endSeconds": 15 },
+      "cues": [
+        { "start": 0, "end": 0.8, "lines": ["before"] },
+        {
+          "start": 9.8,
+          "end": 10.7,
+          "lines": ["straddles Hello", "overlapping zero"]
+        },
+        {
+          "start": 10.7,
+          "end": 11.4,
+          "lines": ["supercalifragilisticexpialidocious", "again."]
+        },
+        { "start": 11.4, "end": 12.3, "lines": ["out-of-order Done?"] },
+        {
+          "start": 13,
+          "end": 15,
+          "lines": ["after a pause that", "keeps going and"]
+        }
+      ]
+    },
+    {
+      "words": "edge",
+      "range": { "startSeconds": 10.05, "endSeconds": 11.35 },
+      "cues": [
+        {
+          "start": 0,
+          "end": 0.6499999999999986,
+          "lines": ["straddles Hello", "overlapping zero"]
+        },
+        {
+          "start": 0.6499999999999986,
+          "end": 1.299999999999999,
+          "lines": ["supercalifragilisticexpialidocious"]
+        }
+      ]
+    },
+    {
+      "words": "edge",
+      "range": { "startSeconds": 0, "endSeconds": 180 },
+      "cues": [
+        { "start": 0, "end": 0.8, "lines": ["before"] },
+        {
+          "start": 9.8,
+          "end": 10.7,
+          "lines": ["straddles Hello", "overlapping zero"]
+        },
+        {
+          "start": 10.7,
+          "end": 11.4,
+          "lines": ["supercalifragilisticexpialidocious", "again."]
+        },
+        { "start": 11.4, "end": 12.3, "lines": ["out-of-order Done?"] },
+        {
+          "start": 13,
+          "end": 15.05,
+          "lines": ["after a pause that", "keeps going and"]
+        },
+        {
+          "start": 15.05,
+          "end": 16.9,
+          "lines": ["going until the", "lines fill"]
+        },
+        { "start": 19.97, "end": 20.419999999999998, "lines": ["edge"] },
+        { "start": 25.2, "end": 25.9, "lines": ["after"] }
+      ]
+    },
+    {
+      "words": "edge",
+      "range": { "startSeconds": 30, "endSeconds": 40 },
+      "cues": []
+    }
+  ]
+}

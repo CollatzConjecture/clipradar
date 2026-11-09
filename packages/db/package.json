@@ -1,0 +1,35 @@
+{
+  "name": "@clipradar/db",
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts",
+    "./captions": "./src/captions.ts",
+    "./editor": "./src/editor.ts",
+    "./jobs": "./src/jobs.ts",
+    "./media": "./src/media.ts",
+    "./rules": "./src/rules.ts",
+    "./schema/auth": "./src/schema/auth.ts",
+    "./timeline": "./src/timeline.ts",
+    "./versions": "./src/versions.ts"
+  },
+  "scripts": {
+    "check-types": "tsc --noEmit",
+    "db:generate": "drizzle-kit generate",
+    "db:migrate": "drizzle-kit migrate",
+    "db:migrate:deploy": "drizzle-kit migrate",
+    "db:push": "drizzle-kit push",
+    "db:studio": "drizzle-kit studio"
+  },
+  "dependencies": {
+    "drizzle-orm": "catalog:",
+    "pg": "^8.23.0",
+    "zod": "catalog:"
+  },
+  "devDependencies": {
+    "@clipradar/config": "workspace:*",
+    "@types/pg": "^8.23.1",
+    "drizzle-kit": "1.0.0-rc.5",
+    "typescript": "catalog:",
+    "varlock": "catalog:"
+  }
+}

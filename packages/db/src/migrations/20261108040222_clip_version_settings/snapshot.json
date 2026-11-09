@@ -1,0 +1,410 @@
+{
+  "type": "diff",
+  "version": "9",
+  "dialect": "postgres",
+  "id": "60ce4dfd-a6cd-4ec7-8e04-1fe859241419",
+  "prevIds": [
+    "4e9de90d-a0cf-4627-871b-664b3bbcfc4d"
+  ],
+  "footprints": [
+    {
+      "statementType": "drop_check",
+      "statementTarget": [
+        "table",
+        "public",
+        "clip_version"
+      ],
+      "writes": [
+        "s|ck|public.clip_version.clip_version_length",
+        "n|ck|public.clip_version.clip_version_length",
+        "e|ck|public.clip_version.clip_version_length",
+        "n|con|public.clip_version.clip_version_length"
+      ],
+      "reads": [
+        "n|tbl|public.clip_version",
+        "n|sch|public",
+        "e|col|public.clip_version.start_seconds",
+        "e|col|public.clip_version.end_seconds"
+      ]
+    },
+    {
+      "statementType": "drop_check",
+      "statementTarget": [
+        "table",
+        "public",
+        "clip_version"
+      ],
+      "writes": [
+        "s|ck|public.clip_version.clip_version_crop",
+        "n|ck|public.clip_version.clip_version_crop",
+        "e|ck|public.clip_version.clip_version_crop",
+        "n|con|public.clip_version.clip_version_crop"
+      ],
+      "reads": [
+        "n|tbl|public.clip_version",
+        "n|sch|public",
+        "e|col|public.clip_version.crop_x"
+      ]
+    },
+    {
+      "statementType": "drop_check",
+      "statementTarget": [
+        "table",
+        "public",
+        "clip_version"
+      ],
+      "writes": [
+        "s|ck|public.clip_version.clip_version_edits_array",
+        "n|ck|public.clip_version.clip_version_edits_array",
+        "e|ck|public.clip_version.clip_version_edits_array",
+        "n|con|public.clip_version.clip_version_edits_array"
+      ],
+      "reads": [
+        "n|tbl|public.clip_version",
+        "n|sch|public",
+        "e|col|public.clip_version.caption_edits"
+      ]
+    },
+    {
+      "statementType": "add_column",
+      "statementTarget": [
+        "column",
+        "public",
+        "clip_version",
+        "settings"
+      ],
+      "writes": [
+        "s|col|public.clip_version.settings",
+        "n|col|public.clip_version.settings",
+        "e|col|public.clip_version.settings"
+      ],
+      "reads": [
+        "n|tbl|public.clip_version",
+        "n|sch|public"
+      ]
+    },
+    {
+      "statementType": "add_column",
+      "statementTarget": [
+        "column",
+        "public",
+        "clip_version",
+        "deleted_at"
+      ],
+      "writes": [
+        "s|col|public.clip_version.deleted_at",
+        "n|col|public.clip_version.deleted_at",
+        "e|col|public.clip_version.deleted_at"
+      ],
+      "reads": [
+        "n|tbl|public.clip_version",
+        "n|sch|public"
+      ]
+    },
+    {
+      "statementType": "add_column",
+      "statementTarget": [
+        "column",
+        "public",
+        "clip_version",
+        "file_purged_at"
+      ],
+      "writes": [
+        "s|col|public.clip_version.file_purged_at",
+        "n|col|public.clip_version.file_purged_at",
+        "e|col|public.clip_version.file_purged_at"
+      ],
+      "reads": [
+        "n|tbl|public.clip_version",
+        "n|sch|public"
+      ]
+    },
+    {
+      "statementType": "drop_column",
+      "statementTarget": [
+        "column",
+        "public",
+        "clip_version",
+        "start_seconds"
+      ],
+      "writes": [
+        "s|col|public.clip_version.start_seconds",
+        "n|col|public.clip_version.start_seconds",
+        "e|col|public.clip_version.start_seconds"
+      ],
+      "reads": [
+        "n|tbl|public.clip_version",
+        "n|sch|public"
+      ]
+    },
+    {
+      "statementType": "drop_column",
+      "statementTarget": [
+        "column",
+        "public",
+        "clip_version",
+        "end_seconds"
+      ],
+      "writes": [
+        "s|col|public.clip_version.end_seconds",
+        "n|col|public.clip_version.end_seconds",
+        "e|col|public.clip_version.end_seconds"
+      ],
+      "reads": [
+        "n|tbl|public.clip_version",
+        "n|sch|public"
+      ]
+    },
+    {
+      "statementType": "drop_column",
+      "statementTarget": [
+        "column",
+        "public",
+        "clip_version",
+        "crop_x"
+      ],
+      "writes": [
+        "s|col|public.clip_version.crop_x",
+        "n|col|public.clip_version.crop_x",
+        "e|col|public.clip_version.crop_x"
+      ],
+      "reads": [
+        "n|tbl|public.clip_version",
+        "n|sch|public"
+      ]
+    },
+    {
+      "statementType": "drop_column",
+      "statementTarget": [
+        "column",
+        "public",
+        "clip_version",
+        "captions"
+      ],
+      "writes": [
+        "s|col|public.clip_version.captions",
+        "n|col|public.clip_version.captions",
+        "e|col|public.clip_version.captions"
+      ],
+      "reads": [
+        "n|tbl|public.clip_version",
+        "n|sch|public"
+      ]
+    },
+    {
+      "statementType": "drop_column",
+      "statementTarget": [
+        "column",
+        "public",
+        "clip_version",
+        "caption_edits"
+      ],
+      "writes": [
+        "s|col|public.clip_version.caption_edits",
+        "n|col|public.clip_version.caption_edits",
+        "e|col|public.clip_version.caption_edits"
+      ],
+      "reads": [
+        "n|tbl|public.clip_version",
+        "n|sch|public"
+      ]
+    },
+    {
+      "statementType": "alter_column",
+      "statementTarget": [
+        "column",
+        "public",
+        "clip_version",
+        "number"
+      ],
+      "writes": [
+        "s|colprop|public.clip_version.number.type",
+        "s|colprop|public.clip_version.number.default"
+      ],
+      "reads": [
+        "n|tbl|public.clip_version",
+        "n|sch|public",
+        "n|col|public.clip_version.number"
+      ],
+      "sqlHash": "34ffd24b0ac1dbbb"
+    },
+    {
+      "statementType": "add_check",
+      "statementTarget": [
+        "table",
+        "public",
+        "clip_version"
+      ],
+      "writes": [
+        "s|ck|public.clip_version.clip_version_settings",
+        "n|ck|public.clip_version.clip_version_settings",
+        "e|ck|public.clip_version.clip_version_settings",
+        "n|con|public.clip_version.clip_version_settings"
+      ],
+      "reads": [
+        "n|tbl|public.clip_version",
+        "n|sch|public",
+        "n|col|public.clip_version.settings"
+      ]
+    },
+    {
+      "statementType": "add_check",
+      "statementTarget": [
+        "table",
+        "public",
+        "clip_version"
+      ],
+      "writes": [
+        "s|ck|public.clip_version.clip_version_deleted_when_done",
+        "n|ck|public.clip_version.clip_version_deleted_when_done",
+        "e|ck|public.clip_version.clip_version_deleted_when_done",
+        "n|con|public.clip_version.clip_version_deleted_when_done"
+      ],
+      "reads": [
+        "n|tbl|public.clip_version",
+        "n|sch|public",
+        "n|col|public.clip_version.deleted_at",
+        "n|col|public.clip_version.status"
+      ]
+    },
+    {
+      "statementType": "add_check",
+      "statementTarget": [
+        "table",
+        "public",
+        "clip_version"
+      ],
+      "writes": [
+        "s|ck|public.clip_version.clip_version_purged_after_delete",
+        "n|ck|public.clip_version.clip_version_purged_after_delete",
+        "e|ck|public.clip_version.clip_version_purged_after_delete",
+        "n|con|public.clip_version.clip_version_purged_after_delete"
+      ],
+      "reads": [
+        "n|tbl|public.clip_version",
+        "n|sch|public",
+        "n|col|public.clip_version.file_purged_at",
+        "n|col|public.clip_version.deleted_at"
+      ]
+    }
+  ],
+  "deltas": [
+    {
+      "op": "create",
+      "row": {
+        "schema": "public",
+        "table": "clip_version",
+        "name": "settings",
+        "type": "jsonb",
+        "typeSchema": null,
+        "notNull": true,
+        "dimensions": 0,
+        "default": null,
+        "generated": null,
+        "identity": null,
+        "entityType": "columns"
+      }
+    },
+    {
+      "op": "create",
+      "row": {
+        "schema": "public",
+        "table": "clip_version",
+        "name": "deleted_at",
+        "type": "timestamp with time zone",
+        "typeSchema": null,
+        "notNull": false,
+        "dimensions": 0,
+        "default": null,
+        "generated": null,
+        "identity": null,
+        "entityType": "columns"
+      }
+    },
+    {
+      "op": "create",
+      "row": {
+        "schema": "public",
+        "table": "clip_version",
+        "name": "file_purged_at",
+        "type": "timestamp with time zone",
+        "typeSchema": null,
+        "notNull": false,
+        "dimensions": 0,
+        "default": null,
+        "generated": null,
+        "identity": null,
+        "entityType": "columns"
+      }
+    },
+    {
+      "op": "create",
+      "row": {
+        "schema": "public",
+        "table": "clip_version",
+        "name": "clip_version_settings",
+        "value": "jsonb_typeof(\"settings\") = 'object' and \"settings\" -> 'version' = '2'::jsonb",
+        "entityType": "checks"
+      }
+    },
+    {
+      "op": "create",
+      "row": {
+        "schema": "public",
+        "table": "clip_version",
+        "name": "clip_version_deleted_when_done",
+        "value": "\"deleted_at\" is null or \"status\" in ('ready', 'failed')",
+        "entityType": "checks"
+      }
+    },
+    {
+      "op": "create",
+      "row": {
+        "schema": "public",
+        "table": "clip_version",
+        "name": "clip_version_purged_after_delete",
+        "value": "\"file_purged_at\" is null or \"deleted_at\" is not null",
+        "entityType": "checks"
+      }
+    },
+    {
+      "op": "drop",
+      "key": "columns\u0000[\"public\",\"clip_version\",\"start_seconds\"]"
+    },
+    {
+      "op": "drop",
+      "key": "columns\u0000[\"public\",\"clip_version\",\"end_seconds\"]"
+    },
+    {
+      "op": "drop",
+      "key": "columns\u0000[\"public\",\"clip_version\",\"crop_x\"]"
+    },
+    {
+      "op": "drop",
+      "key": "columns\u0000[\"public\",\"clip_version\",\"captions\"]"
+    },
+    {
+      "op": "drop",
+      "key": "columns\u0000[\"public\",\"clip_version\",\"caption_edits\"]"
+    },
+    {
+      "op": "drop",
+      "key": "checks\u0000[\"public\",\"clip_version\",\"clip_version_length\"]"
+    },
+    {
+      "op": "drop",
+      "key": "checks\u0000[\"public\",\"clip_version\",\"clip_version_crop\"]"
+    },
+    {
+      "op": "drop",
+      "key": "checks\u0000[\"public\",\"clip_version\",\"clip_version_edits_array\"]"
+    },
+    {
+      "op": "alter",
+      "key": "columns\u0000[\"public\",\"clip_version\",\"number\"]",
+      "set": {
+        "type": "integer"
+      }
+    }
+  ]
+}

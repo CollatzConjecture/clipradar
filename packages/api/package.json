@@ -1,0 +1,22 @@
+{
+  "name": "@clipradar/api",
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts",
+    "./*": "./src/*.ts"
+  },
+  "scripts": {
+    "check-types": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@clipradar/auth": "workspace:*",
+    "@clipradar/db": "workspace:*",
+    "@trpc/client": "catalog:",
+    "@trpc/server": "catalog:",
+    "zod": "catalog:"
+  },
+  "devDependencies": {
+    "@clipradar/config": "workspace:*",
+    "typescript": "catalog:"
+  }
+}

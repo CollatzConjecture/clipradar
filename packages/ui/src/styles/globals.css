@@ -1,0 +1,214 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+@import "@fontsource-variable/archivo/wdth.css";
+@source "../../../apps/**/*.{ts,tsx}";
+@source "../**/*.{ts,tsx}";
+
+@custom-variant dark (&:is(.dark *));
+
+/* Dark only, so the tokens sit on :root with no light set. */
+:root {
+  /* The operator's palette. Every neutral below is one of these. */
+  --bright-snow: #f8f9fa;
+  --platinum: #e9ecef;
+  --pale-slate: #ced4da;
+  /* The palette names #adb5bd pale_slate too. */
+  --pale-slate-2: #adb5bd;
+  --slate-grey: #6c757d;
+  --iron-grey: #495057;
+  --gunmetal: #343a40;
+  --carbon-black: #212529;
+  --carbon-black-400: #1b1f22;
+  --carbon-black-300: #141719;
+  /* Accents over the greys. Ultraviolet is the signal: actions, selection,
+     the playhead, focus. The solid reads 3.8:1 as text on gunmetal, so text,
+     hover and the focus ring take the lighter step. Cyan only tells caption
+     tracks apart from video. */
+  --signal: #9483ff;
+  --signal-light: #b7a8ff;
+  --caption-hue: #38c8e8;
+
+  --viewer: var(--carbon-black-300);
+  --background: var(--carbon-black-400);
+  --card: var(--carbon-black);
+  --raised: var(--gunmetal);
+  --popover: var(--gunmetal);
+  --secondary: var(--gunmetal);
+  --muted: var(--gunmetal);
+  --accent: var(--iron-grey);
+  --border: var(--iron-grey);
+  /* Control edges need 3:1 against the surface, which iron grey misses. */
+  --input: var(--slate-grey);
+  --control: var(--slate-grey);
+
+  --foreground: var(--bright-snow);
+  --card-foreground: var(--bright-snow);
+  --popover-foreground: var(--bright-snow);
+  --secondary-foreground: var(--bright-snow);
+  --accent-foreground: var(--bright-snow);
+  --muted-foreground: var(--pale-slate);
+  --faint: var(--pale-slate-2);
+
+  --primary: var(--signal);
+  --primary-hover: var(--signal-light);
+  --primary-text: var(--signal-light);
+  --primary-foreground: var(--carbon-black);
+  --ring: var(--signal-light);
+  /* 60% keeps the halo at 3:1 on every surface, gunmetal included. */
+  --focus-ring: color-mix(in oklab, var(--ring) 60%, transparent);
+
+  /* The one semantic red: errors, failed clips and destructive actions. */
+  --negative: #ff7b72;
+  --negative-tint: color-mix(in oklch, var(--negative) 14%, var(--card));
+  --destructive: var(--negative);
+
+  /* Buttons, inputs, selects, tabs. Panels add 4px, nested items take 2px. */
+  --radius: 0.5rem;
+  --radius-inner: calc(var(--radius) - 2px);
+  --radius-panel: calc(var(--radius) + 4px);
+  color-scheme: dark;
+}
+
+@theme inline {
+  --font-sans: "Archivo Variable", system-ui, sans-serif;
+  --font-mono: ui-monospace, "SF Mono", Menlo, monospace;
+  --ease-out-strong: cubic-bezier(0.23, 1, 0.32, 1);
+  --color-viewer: var(--viewer);
+  --color-raised: var(--raised);
+  --color-faint: var(--faint);
+  --color-control: var(--control);
+  --color-negative: var(--negative);
+  --color-negative-tint: var(--negative-tint);
+  --color-primary-hover: var(--primary-hover);
+  --color-primary-text: var(--primary-text);
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
+  --color-foreground: var(--foreground);
+  --color-background: var(--background);
+  --radius-md: var(--radius-inner);
+  --radius-lg: var(--radius);
+  --radius-xl: var(--radius-panel);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring;
+  }
+  html {
+    @apply font-sans;
+  }
+  body {
+    font-size: 13px;
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.45;
+    @apply bg-background text-foreground;
+  }
+  :focus-visible {
+    outline: 3px solid var(--focus-ring);
+    outline-offset: 0;
+  }
+  button:not(:disabled),
+  [role="button"]:not([aria-disabled="true"]),
+  a[href] {
+    cursor: pointer;
+  }
+}
+
+@layer utilities {
+  .tnum {
+    font-variant-numeric: tabular-nums;
+  }
+  /* Archivo's width axis gives file names a slate-like condensed cut. */
+  .condensed {
+    font-stretch: 82%;
+  }
+  .press {
+    transition: transform 140ms var(--ease-out-strong);
+  }
+  .press:active:not(:disabled) {
+    transform: scale(0.97);
+  }
+  .hatch {
+    background-image: repeating-linear-gradient(
+      135deg,
+      var(--border) 0 1px,
+      transparent 1px 6px
+    );
+  }
+  .hatch-negative {
+    background-image: repeating-linear-gradient(
+      135deg,
+      color-mix(in oklch, var(--negative) 45%, transparent) 0 1px,
+      transparent 1px 6px
+    );
+  }
+}
+
+.render-live [data-slot="progress-track"] {
+  height: 3px;
+}
+.render-live [data-slot="progress-indicator"] {
+  position: relative;
+  overflow: hidden;
+}
+/* The running step's sweep is constant motion, so it is linear. */
+.render-live [data-slot="progress-indicator"]::after {
+  position: absolute;
+  inset: 0;
+  width: 40%;
+  content: "";
+  background: var(--primary-hover);
+  animation: render-sweep 1.4s linear infinite;
+}
+.render-live[data-indeterminate] [data-slot="progress-indicator"] {
+  width: 100%;
+  background: transparent;
+}
+@keyframes render-sweep {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(250%);
+  }
+}
+
+/* The sign-in showcase's playhead. Animates `translate` so its resting translate-x is replaced, not added to. */
+@keyframes playhead-scan {
+  from {
+    translate: 0;
+  }
+  to {
+    translate: 100%;
+  }
+}
+
+/* Sonner ships its own system font stack. Toasts take the app's type instead. */
+html [data-sonner-toaster] {
+  font-family: inherit;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .render-live [data-slot="progress-indicator"]::after {
+    opacity: 0;
+    animation: none;
+  }
+  .press:active:not(:disabled) {
+    transform: none;
+  }
+}

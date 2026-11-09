@@ -1,0 +1,3 @@
+{
+  "extends": "@clipradar/config/tsconfig.base.json"
+}

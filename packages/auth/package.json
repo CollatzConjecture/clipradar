@@ -1,0 +1,23 @@
+{
+  "name": "@clipradar/auth",
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts",
+    "./*": "./src/*.ts"
+  },
+  "scripts": {
+    "check-types": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@better-auth/core": "1.7.12",
+    "@better-auth/drizzle-adapter": "1.7.12",
+    "@clipradar/db": "workspace:*",
+    "better-auth": "catalog:",
+    "drizzle-orm": "catalog:",
+    "zod": "catalog:"
+  },
+  "devDependencies": {
+    "@clipradar/config": "workspace:*",
+    "typescript": "catalog:"
+  }
+}

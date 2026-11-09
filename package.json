@@ -1,0 +1,58 @@
+{
+  "name": "clipradar",
+  "private": true,
+  "type": "module",
+  "workspaces": {
+    "packages": [
+      "apps/*",
+      "packages/*"
+    ],
+    "catalog": {
+      "zod": "^4.5.4",
+      "typescript": "^6.0.3",
+      "varlock": "1.23.0",
+      "next-themes": "^0.4.6",
+      "sonner": "^2.0.8",
+      "tailwindcss": "^4.3.3",
+      "@trpc/server": "^11.19.0",
+      "@trpc/client": "^11.19.0",
+      "better-auth": "1.7.12",
+      "drizzle-orm": "1.0.0-rc.5"
+    }
+  },
+  "scripts": {
+    "auth:generate": "cd apps/web && bun run auth:generate",
+    "build": "bun run --filter '*' build",
+    "check": "ultracite check",
+    "check-types": "bun run --filter '*' check-types",
+    "db:down": "docker compose down postgres",
+    "db:generate": "bun run --filter @clipradar/db db:generate",
+    "db:migrate": "bun run --filter @clipradar/db db:migrate",
+    "db:push": "bun run --filter @clipradar/db db:push",
+    "db:start": "docker compose up -d postgres",
+    "db:stop": "docker compose stop postgres",
+    "db:studio": "bun run --filter @clipradar/db db:studio",
+    "db:watch": "docker compose up postgres",
+    "dev": "bun run --filter '*' dev",
+    "dev:web": "bun run --filter web dev",
+    "docker:build": "docker compose build",
+    "docker:down": "docker compose down",
+    "docker:logs": "docker compose logs -f",
+    "docker:up": "docker compose up -d --build",
+    "env:generate": "varlock codegen --path ./apps/web/ && varlock codegen --path ./packages/db/ && varlock codegen --path ./apps/worker/",
+    "fix": "ultracite fix",
+    "postinstall": "varlock codegen --path ./apps/web/ && varlock codegen --path ./packages/db/ && varlock codegen --path ./apps/worker/"
+  },
+  "dependencies": {
+    "zod": "catalog:"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.6.4",
+    "@clipradar/config": "workspace:*",
+    "@types/node": "^26.4.1",
+    "typescript": "catalog:",
+    "ultracite": "8.1.1",
+    "varlock": "catalog:"
+  },
+  "packageManager": "bun@1.3.11"
+}
